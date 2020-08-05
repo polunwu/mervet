@@ -86,14 +86,28 @@ ul {
       background-position: top center;
     }
     .bg__1 {
-      height: 2614px;
       background-image: url("../../../assets/images/bg-1.png");
-      margin-bottom: 552px;
+      height: 2614px;
     }
     .bg__2 {
-      height: 1499px;
       background-image: url("../../../assets/images/bg-2.png");
-      margin-bottom: 531px;
+      height: 1499px;
+      margin-top: 552px;
+    }
+    .bg__3 {
+      background-image: url("../../../assets/images/bg-3.png");
+      height: 2100.7px;
+      margin-top: 531px;
+    }
+    .bg__4 {
+      background-image: url("../../../assets/images/bg-4.png");
+      height: 2107px;
+      margin-top: 1120.3px;
+    }
+    .bg__footer {
+      width: 100vw;
+      height: 212px;
+      background-color: #fff;
     }
   }
 
@@ -143,11 +157,21 @@ ul {
     &__bg {
       .bg__1 {
         height: 181.6vw;
-        margin-bottom: 38.4vw;
       }
       .bg__2 {
         height: 104.1vw;
-        margin-bottom: 36.9vw;
+        margin-top: 38.4vw;
+      }
+      .bg__3 {
+        height: 145.9vw;
+        margin-top: 36.9vw;
+      }
+      .bg__4 {
+        height: 146.3vw;
+        margin-top: 77.8vw;
+      }
+      .bg__footer {
+        height: 14.7vw;
       }
     }
 
@@ -214,6 +238,9 @@ ul {
         top: 528px;
         right: -441px;
       }
+      .bg__footer {
+        height: 321px;
+      }
     }
   }
 
@@ -223,7 +250,22 @@ ul {
       .bg__1 {
         height: 1847px;
         background-position-x: center;
-        margin-bottom: 315px;
+      }
+      .bg__2 {
+        height: 1059px;
+        margin-top: 315px;
+      }
+      .bg__3 {
+        height: 1350px;
+        margin-top: 287px;
+      }
+      .bg__4 {
+        height: 1303px;
+        margin-top: 611px;
+        margin-bottom: -40px;
+      }
+      .bg__footer {
+        height: 560px;
       }
     }
 
@@ -246,12 +288,6 @@ ul {
         top: 514px;
         left: -27px;
       }
-      .obj__4 {
-        width: 222px;
-        height: 395px;
-        top: 293px;
-        right: -54px;
-      }
       .obj__3--mobile {
         position: absolute;
         display: block;
@@ -260,6 +296,12 @@ ul {
         height: 296px;
         left: -23px;
         top: 1750px;
+      }
+      .obj__4 {
+        width: 222px;
+        height: 395px;
+        top: 293px;
+        right: -54px;
       }
     }
   }
