@@ -1,5 +1,6 @@
 // VARIABLES
 $main-color: #4d4d4d;
+$brown: #a73d0d;
 $main-font: "PingFang TC";
 
 // GENERAL
@@ -253,6 +254,79 @@ ul {
         height: 99.5px;
       }
     }
+    .content__card-list {
+      top: 904px;
+      left: 60.3vw;
+      display: flex;
+      flex-direction: row;
+
+      .content__card {
+        width: 311px;
+        height: 417px;
+        border-radius: 45px;
+        box-shadow: 0px 7px 20px #acb9ba;
+        margin-right: 41px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        cursor: pointer;
+
+        .card__info {
+          width: 100%;
+          margin: 18px 16px;
+          padding: 16px 11px 11px 11px;
+          border-radius: 38px;
+          background-color: #fff;
+          text-align: center;
+          .card__title {
+            line-height: 25px;
+            letter-spacing: 2.7px;
+            font-size: 18px;
+            color: $main-color;
+            padding-bottom: 6.5px;
+          }
+          .card__price {
+            line-height: 21px;
+            letter-spacing: 0px;
+            font-size: 18px;
+            color: $brown;
+          }
+        }
+      }
+      .card--1 {
+        background-image: url("../../../assets/images/prod-1.png");
+      }
+      .card--2 {
+        background-image: url("../../../assets/images/prod-2.png");
+      }
+      .card--3 {
+        background-image: url("../../../assets/images/prod-3.png");
+      }
+    }
+    .content__slogan {
+      top: 2109px;
+      left: 175px;
+      width: 692px;
+      margin: 0;
+      font-size: 80px;
+      font-family: $main-font;
+      font-weight: inherit;
+      color: $main-color;
+      letter-spacing: 24px;
+      line-height: 116px;
+    }
+    .content__brand-serif {
+      top: 2486px;
+      right: 132px;
+      width: 110px;
+      height: 128px;
+    }
   }
 
   // 1440px 以上等比例放大
@@ -376,6 +450,48 @@ ul {
           height: 6.9vw;
         }
       }
+      .content__slogan {
+        top: 146.46vw;
+        left: 12.15vw;
+        width: 48.06vw;
+        font-size: 5.56vw;
+        letter-spacing: 1.67vw;
+        line-height: 8.06vw;
+      }
+      .content__brand-serif {
+        top: 172.64vw;
+        right: 9.17vw;
+        width: 7.64vw;
+        height: 8.89vw;
+      }
+      .content__card-list {
+        top: 62.78vw;
+        left: 60.3vw;
+
+        .content__card {
+          width: 21.6vw;
+          height: 29vw;
+          border-radius: 3.13vw;
+          box-shadow: 0px 70.4vw 1.4vw #acb9ba;
+          margin-right: 2.85vw;
+
+          .card__info {
+            margin: 1.25vw 1.11vw;
+            padding: 1.11vw 0.76vw 0.76vw 0.76vw;
+            border-radius: 2.64vw;
+            .card__title {
+              line-height: 1.74vw;
+              letter-spacing: 0.188vw;
+              font-size: 1.25vw;
+              padding-bottom: 0.45vw;
+            }
+            .card__price {
+              line-height: 1.46vw;
+              font-size: 1.25vw;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -406,6 +522,18 @@ ul {
       }
       .obj__11 {
         right: -243px;
+      }
+    }
+
+    &__content {
+      .content__slogan {
+        left: 107px;
+      }
+      .content__brand-serif {
+        right: 89px;
+      }
+      .content__card-list {
+        left: 59vw;
       }
     }
   }
@@ -469,6 +597,18 @@ ul {
         height: 314px;
         top: 9004px;
         right: -55px;
+      }
+    }
+
+    &__content {
+      .content__slogan {
+        left: 38px;
+      }
+      .content__brand-serif {
+        right: 61px;
+      }
+      .content__card-list {
+        left: 46.6vw;
       }
     }
   }
@@ -603,6 +743,47 @@ ul {
           font-size: 13px;
           letter-spacing: 3.9px;
           margin-bottom: 87.1px;
+        }
+      }
+      .content__slogan {
+        top: 1516px;
+        left: 29px;
+        width: 354px;
+        font-size: 50px;
+        letter-spacing: 15px;
+        line-height: 72.5px;
+      }
+      .content__brand-serif {
+        top: 1734px;
+        right: 30px;
+        width: 67px;
+        height: 77px;
+      }
+
+      .content__card-list {
+        top: 590px;
+        left: 33.8vw;
+
+        .content__card {
+          width: 226px;
+          height: 303px;
+          margin-right: 25px;
+
+          .card__info {
+            margin: 18px;
+            padding: 10.8px 18px 6.75px 18px;
+            border-radius: 27px;
+            .card__title {
+              line-height: 18px;
+              letter-spacing: 1.95px;
+              font-size: 13px;
+              padding-bottom: 3.4px;
+            }
+            .card__price {
+              line-height: 15px;
+              font-size: 13px;
+            }
+          }
         }
       }
     }
