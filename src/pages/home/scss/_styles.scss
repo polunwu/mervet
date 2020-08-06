@@ -150,6 +150,54 @@ ul {
       display: none;
       visibility: hidden;
     }
+    .obj__5 {
+      width: 565px;
+      height: 814px;
+      top: 3915px;
+      left: 0px;
+    }
+    .obj__6 {
+      width: 445px;
+      height: 731px;
+      top: 3166px;
+      right: 0px;
+    }
+    .obj__7 {
+      width: 302px;
+      height: 960px;
+      top: 5182px;
+      left: 0px;
+    }
+    .obj__8 {
+      width: 787px;
+      height: 553px;
+      top: 5860px;
+      right: 0px;
+    }
+    .obj__9 {
+      width: 305px;
+      height: 462px;
+      top: 6538px;
+      right: 0px;
+    }
+    .obj__sakura {
+      width: 1088px;
+      height: 625px;
+      top: 8579px;
+      left: 141px;
+    }
+    .obj__10 {
+      width: 376px;
+      height: 455px;
+      top: 8892px;
+      left: 0px;
+    }
+    .obj__11 {
+      width: 394px;
+      height: 584px;
+      top: 8962px;
+      right: 0px;
+    }
   }
 
   // 1440px 以上等比例放大
@@ -200,20 +248,80 @@ ul {
         top: 35.6vw;
         right: -4vw;
       }
+      .obj__5 {
+        width: 39.2vw;
+        height: 56.5vw;
+        top: 271.88vw;
+        left: 0px;
+      }
+      .obj__6 {
+        width: 30.9vw;
+        height: 50.76vw;
+        top: 219.9vw;
+        right: 0px;
+      }
+      .obj__7 {
+        width: 21vw;
+        height: 66.7vw;
+        top: 359.9vw;
+        left: 0px;
+      }
+      .obj__8 {
+        width: 54.65vw;
+        height: 38.4vw;
+        top: 406.9vw;
+      }
+      .obj__9 {
+        width: 21.2vw;
+        height: 32.1vw;
+        top: 454vw;
+      }
+      .obj__sakura {
+        width: 75.6vw;
+        height: 43.4vw;
+        top: 595.8vw;
+        left: 9.8vw;
+      }
+      .obj__10 {
+        width: 26.1vw;
+        height: 31.6vw;
+        top: 617.5vw;
+      }
+      .obj__11 {
+        width: 27.4vw;
+        height: 40.6vw;
+        top: 622.36vw;
+      }
     }
   }
 
   // 設計稿：1024px 以上
   @media screen and (max-width: 1280px) {
-    &__bg {
-    }
-
     &__overlay {
       .obj__2 {
         right: -222px;
       }
       .obj__4 {
         right: -185px;
+      }
+      .obj__7 {
+        left: -45px;
+      }
+      .obj__8 {
+        top: 5837px;
+        right: -217px;
+      }
+      .obj__9 {
+        top: 6500px;
+      }
+      .obj__sakura {
+        left: -32px;
+      }
+      .obj__10 {
+        left: -163px;
+      }
+      .obj__11 {
+        right: -243px;
       }
     }
   }
@@ -240,6 +348,43 @@ ul {
       }
       .bg__footer {
         height: 321px;
+      }
+      .obj__6 {
+        right: -29px;
+      }
+      .obj__7 {
+        width: 212px;
+        height: 678px;
+        top: 5209px;
+        left: -40px;
+      }
+      .obj__8 {
+        width: 712px;
+        height: 501px;
+        top: 5745px;
+        right: -180px;
+      }
+      .obj__9 {
+        top: 6455px;
+        right: -129px;
+      }
+      .obj__sakura {
+        width: 876px;
+        height: 503px;
+        top: 8600px;
+        left: -39px;
+      }
+      .obj__10 {
+        width: 285px;
+        height: 344px;
+        top: 8507px;
+        left: -9px;
+      }
+      .obj__11 {
+        width: 212px;
+        height: 314px;
+        top: 9004px;
+        right: -55px;
       }
     }
   }
@@ -302,6 +447,54 @@ ul {
         height: 395px;
         top: 293px;
         right: -54px;
+      }
+      .obj__5 {
+        width: 194px;
+        height: 365px;
+        top: 2952px;
+        left: -59px;
+      }
+      .obj__6 {
+        width: 230px;
+        height: 378px;
+        top: 2226px;
+        right: -55px;
+      }
+      .obj__7 {
+        width: 131px;
+        height: 416px;
+        top: 3470px;
+        left: -78px;
+      }
+      .obj__8 {
+        width: 403px;
+        height: 283px;
+        top: 3869px;
+        right: -141px;
+      }
+      .obj__9 {
+        width: 124px;
+        height: 188px;
+        top: 4585px;
+        right: -7px;
+      }
+      .obj__sakura {
+        width: 577px;
+        height: 331px;
+        top: 5652px;
+        left: -73px;
+      }
+      .obj__10 {
+        width: 215px;
+        height: 259px;
+        top: 5513px;
+        left: 0px;
+      }
+      .obj__11 {
+        width: 150px;
+        height: 222px;
+        top: 5885px;
+        right: -111px;
       }
     }
   }
