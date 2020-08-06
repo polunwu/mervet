@@ -13,7 +13,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Segoe UI",
     "Noto Sans TC", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
     "Source Han Sans TC", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   // -apple-system,       /* iOS Safari, macOS Safari, macOS Firefox */
   // BlinkMacSystemFont,  /* macOS Chrome */
   // 'PingFang TC',       /* 蘋方 */
@@ -327,6 +327,51 @@ ul {
       width: 110px;
       height: 128px;
     }
+    .content__cure {
+      top: 3554px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .cure__slogan,
+      .cure__sub,
+      .cure__see-more {
+        font-family: $main-font;
+        color: $main-color;
+        text-align: center;
+      }
+      .cure__slogan {
+        font-weight: 100;
+        font-size: 80px;
+        letter-spacing: 20px;
+        line-height: 120.5px;
+        margin: 0px auto 68.3px auto;
+      }
+      .cure__sub {
+        font-weight: 200;
+        font-size: 18px;
+        letter-spacing: 5.4px;
+        line-height: 30.5px;
+        margin: 0px auto 71.6px auto;
+      }
+      .cure__see-more {
+        font-weight: 300;
+
+        width: 382px;
+        height: 95px;
+        background-color: #ffffff;
+        border-radius: 48px;
+        box-shadow: 0px 7px 20px #acb9babf;
+
+        text-align: center;
+        line-height: 95px;
+        font-size: 24px;
+        letter-spacing: 6px;
+      }
+    }
   }
 
   // 1440px 以上等比例放大
@@ -472,7 +517,6 @@ ul {
           width: 21.6vw;
           height: 29vw;
           border-radius: 3.13vw;
-          box-shadow: 0px 70.4vw 1.4vw #acb9ba;
           margin-right: 2.85vw;
 
           .card__info {
@@ -490,6 +534,31 @@ ul {
               font-size: 1.25vw;
             }
           }
+        }
+      }
+      .content__cure {
+        top: 246.8vw;
+
+        .cure__slogan {
+          font-size: 5.56vw;
+          letter-spacing: 1.39vw;
+          line-height: 8.37vw;
+          margin: 0px auto 4.74vw auto;
+        }
+        .cure__sub {
+          font-size: 1.25vw;
+          letter-spacing: 0.375vw;
+          line-height: 2.19vw;
+          margin: 0px auto 5vw auto;
+        }
+        .cure__see-more {
+          width: 26.5vw;
+          height: 6.6vw;
+          border-radius: 9.9vw;
+
+          line-height: 6.6vw;
+          font-size: 1.7vw;
+          letter-spacing: 0.42vw;
         }
       }
     }
@@ -784,6 +853,32 @@ ul {
               font-size: 13px;
             }
           }
+        }
+      }
+      .content__cure {
+        top: 2459px;
+        min-width: 354px;
+
+        .cure__slogan {
+          font-size: 50px;
+          letter-spacing: 12.5px;
+          line-height: 72.5px;
+          margin: 0px auto 53.3px auto;
+        }
+        .cure__sub {
+          font-size: 13px;
+          letter-spacing: 3.25px;
+          line-height: 21.5px;
+          margin: 0px auto 53px auto;
+        }
+        .cure__see-more {
+          width: 280px;
+          height: 60px;
+          border-radius: 60px;
+
+          line-height: 60px;
+          font-size: 15px;
+          letter-spacing: 3.75px;
         }
       }
     }
