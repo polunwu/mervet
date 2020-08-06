@@ -1,3 +1,7 @@
+// VARIABLES
+$main-color: #4d4d4d;
+$main-font: "PingFang TC";
+
 // GENERAL
 html,
 body {
@@ -8,6 +12,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Segoe UI",
     "Noto Sans TC", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
     "Source Han Sans TC", sans-serif;
+  font-weight: 300;
   // -apple-system,       /* iOS Safari, macOS Safari, macOS Firefox */
   // BlinkMacSystemFont,  /* macOS Chrome */
   // 'PingFang TC',       /* 蘋方 */
@@ -111,14 +116,17 @@ ul {
     }
   }
 
-  &__overlay {
+  &__overlay,
+  &__content {
     position: absolute;
     width: 100vw;
     height: 100%;
     top: 0;
     left: 0;
     overflow-x: hidden;
+  }
 
+  &__overlay {
     .overlay__obj {
       position: absolute;
     }
@@ -197,6 +205,53 @@ ul {
       height: 584px;
       top: 8962px;
       right: 0px;
+    }
+  }
+
+  &__content {
+    .content {
+      position: absolute;
+    }
+    .content__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      position: absolute;
+      top: 343px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .title__logo {
+        width: 210.8px;
+        height: 26.9px;
+      }
+      .title__sub,
+      .title__third {
+        font-weight: inherit;
+        font-family: $main-font;
+        color: $main-color;
+        text-align: center;
+      }
+      .title__sub {
+        min-width: 454px;
+        font-size: 24px;
+        letter-spacing: 12px;
+        padding: 12.6px 53.5px 15.4px 53.5px;
+        border: 0.75px solid $main-color;
+        border-radius: 31px;
+        margin: 53.11px auto 29px auto;
+      }
+      .title__third {
+        font-size: 21px;
+        letter-spacing: 6.3px;
+        margin-bottom: 113px;
+      }
+      .title__scroll {
+        width: 51px;
+        height: 99.5px;
+      }
     }
   }
 
@@ -291,6 +346,35 @@ ul {
         width: 27.4vw;
         height: 40.6vw;
         top: 622.36vw;
+      }
+    }
+
+    &__content {
+      .content__title {
+        top: 23.82vw;
+
+        .title__logo {
+          width: 14.63vw;
+          height: 1.868vw;
+        }
+        .title__sub {
+          min-width: 31.53vw;
+          font-size: 1.67vw;
+          letter-spacing: 0.83vw;
+          padding: 0.875vw 3.715vw 1.07vw 3.715vw;
+          border: 0.75px solid $main-color;
+          border-radius: 2vw;
+          margin: 3.69vw auto 2.01vw auto;
+        }
+        .title__third {
+          font-size: 1.46vw;
+          letter-spacing: 0.4375vw;
+          margin-bottom: 7.85vw;
+        }
+        .title__scroll {
+          width: 3.54vw;
+          height: 6.9vw;
+        }
       }
     }
   }
@@ -495,6 +579,31 @@ ul {
         height: 222px;
         top: 5885px;
         right: -111px;
+      }
+    }
+
+    &__content {
+      .content__title {
+        top: 209px;
+
+        .title__logo {
+          width: 125px;
+          height: 16px;
+        }
+        .title__sub {
+          min-width: 267px;
+          font-size: 15px;
+          letter-spacing: 7.5px;
+          padding: 7.6px 24px 7.4px 24px;
+          border: 0.75px solid $main-color;
+          border-radius: 25px;
+          margin: 31.1px auto 16.9px auto;
+        }
+        .title__third {
+          font-size: 13px;
+          letter-spacing: 3.9px;
+          margin-bottom: 87.1px;
+        }
       }
     }
   }
