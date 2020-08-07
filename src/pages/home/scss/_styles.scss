@@ -213,6 +213,7 @@ ul {
     .content {
       position: absolute;
     }
+    // HEAD
     .content__title {
       display: flex;
       justify-content: center;
@@ -327,6 +328,32 @@ ul {
       width: 110px;
       height: 128px;
     }
+    // END OF HEAD
+    // PRODUCT
+    .content__disp--1 {
+      width: 521px;
+      height: 551px;
+      top: 4171px;
+      right: 399px;
+    }
+    .content__disp--2 {
+      width: 289px;
+      height: 443px;
+      top: 4131px;
+      right: 131px;
+    }
+    .content__disp--3 {
+      width: 447px;
+      height: 408px;
+      top: 3839px;
+      right: 95px;
+    }
+    .content__brand-serif--white {
+      width: 117px;
+      height: 136px;
+      top: 4773px;
+      left: 151px;
+    }
     .content__cure {
       top: 3554px;
       left: 50%;
@@ -372,6 +399,7 @@ ul {
         letter-spacing: 6px;
       }
     }
+    // END OF PRODUCT
   }
 
   // 1440px 以上等比例放大
@@ -469,6 +497,7 @@ ul {
     }
 
     &__content {
+      // HEAD
       .content__title {
         top: 23.82vw;
 
@@ -536,6 +565,32 @@ ul {
           }
         }
       }
+      // END OF HEAD
+      // PRODUCT
+      .content__disp--1 {
+        width: 36.2vw;
+        height: 38.3vw;
+        top: 289.7vw;
+        right: 27.7vw;
+      }
+      .content__disp--2 {
+        width: 20.1vw;
+        height: 30.8vw;
+        top: 286.9vw;
+        right: 9.1vw;
+      }
+      .content__disp--3 {
+        width: 31vw;
+        height: 28.3vw;
+        top: 266.6vw;
+        right: 6.6vw;
+      }
+      .content__brand-serif--white {
+        width: 8.1vw;
+        height: 9.4vw;
+        top: 331.5vw;
+        left: 10.5vw;
+      }
       .content__cure {
         top: 246.8vw;
 
@@ -561,6 +616,7 @@ ul {
           letter-spacing: 0.42vw;
         }
       }
+      // END OF PRODUCT
     }
   }
 
@@ -595,6 +651,7 @@ ul {
     }
 
     &__content {
+      // HEAD
       .content__slogan {
         left: 107px;
       }
@@ -604,6 +661,18 @@ ul {
       .content__card-list {
         left: 59vw;
       }
+      // END OF HEAD
+      // PRODUCT
+      .content__disp--1 {
+        right: 27.1vw;
+      }
+      .content__disp--2 {
+        right: 1vw;
+      }
+      .content__disp--3 {
+        right: -2.5vw;
+      }
+      // END OF PRODUCT
     }
   }
 
@@ -670,6 +739,7 @@ ul {
     }
 
     &__content {
+      // HEAD
       .content__slogan {
         left: 38px;
       }
@@ -679,6 +749,21 @@ ul {
       .content__card-list {
         left: 46.6vw;
       }
+      // END OF HEAD
+      // PRODUCT
+      .content__disp--1 {
+        right: 26.7vw;
+      }
+      .content__disp--2 {
+        right: -8.2vw;
+      }
+      .content__disp--3 {
+        right: -12.9vw;
+      }
+      .content__cure {
+        min-width: 642px;
+      }
+      // END OF PRODUCT
     }
   }
 
@@ -792,6 +877,7 @@ ul {
     }
 
     &__content {
+      // HEAD
       .content__title {
         top: 209px;
 
@@ -855,6 +941,32 @@ ul {
           }
         }
       }
+      // END OF HEAD
+      // PRODUCT
+      .content__disp--1 {
+        width: 353px;
+        height: 373px;
+        top: 2814px;
+        right: 90px;
+      }
+      .content__disp--2 {
+        width: 195px;
+        height: 299px;
+        top: 2922px;
+        right: -38px;
+      }
+      .content__disp--3 {
+        width: 303px;
+        height: 276px;
+        top: 2615px;
+        right: -128px;
+      }
+      .content__brand-serif--white {
+        top: 3334px;
+        left: 64px;
+        width: 67px;
+        height: 77px;
+      }
       .content__cure {
         top: 2459px;
         min-width: 354px;
@@ -881,6 +993,7 @@ ul {
           letter-spacing: 3.75px;
         }
       }
+      // END OF PRODUCT
     }
   }
 }
