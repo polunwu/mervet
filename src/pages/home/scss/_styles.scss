@@ -2,6 +2,9 @@
 $main-color: #4d4d4d;
 $brown: #a73d0d;
 $main-font: "PingFang TC";
+$ultraligh: 100;
+$light: 200;
+$thin: 300;
 
 // GENERAL
 html,
@@ -13,7 +16,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Segoe UI",
     "Noto Sans TC", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
     "Source Han Sans TC", sans-serif;
-  font-weight: 200;
+  font-weight: $light;
   // -apple-system,       /* iOS Safari, macOS Safari, macOS Firefox */
   // BlinkMacSystemFont,  /* macOS Chrome */
   // 'PingFang TC',       /* 蘋方 */
@@ -371,21 +374,21 @@ ul {
         text-align: center;
       }
       .cure__slogan {
-        font-weight: 100;
+        font-weight: $ultraligh;
         font-size: 80px;
         letter-spacing: 20px;
         line-height: 120.5px;
         margin: 0px auto 68.3px auto;
       }
       .cure__sub {
-        font-weight: 200;
+        font-weight: $light;
         font-size: 18px;
         letter-spacing: 5.4px;
         line-height: 30.5px;
         margin: 0px auto 71.6px auto;
       }
       .cure__see-more {
-        font-weight: 300;
+        font-weight: $thin;
 
         width: 382px;
         height: 95px;
@@ -400,6 +403,43 @@ ul {
       }
     }
     // END OF PRODUCT
+    // INGREDIENT
+    .content__ingredient-label {
+      width: 710px;
+      height: 83px;
+      top: 5474px;
+      right: 3.75vw;
+    }
+    .content__ingredient-list {
+      top: 5830px;
+      right: 332.64px;
+      .ingerdient__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 600px;
+        height: 153.71px;
+        span {
+          font-weight: $light;
+          font-size: 20px;
+          font-family: $main-font;
+          color: $main-color;
+          letter-spacing: 5px;
+        }
+        svg {
+          width: 153.709px;
+          height: 153.709px;
+        }
+      }
+      .ingerdient__item--2 {
+        transform: translate(-181.33px, -42px);
+      }
+      .ingerdient__item--3 {
+        transform: translate(-303.33px, -63px);
+      }
+    }
+    // END OF INGREDIENT
   }
 
   // 1440px 以上等比例放大
@@ -617,6 +657,36 @@ ul {
         }
       }
       // END OF PRODUCT
+      // INGREDIENT
+      .content__ingredient-label {
+        width: 49.3vw;
+        height: 5.76vw;
+        top: 380.1vw;
+        right: 3.75vw;
+      }
+      .content__ingredient-list {
+        top: 404.86vw;
+        right: 23.1vw;
+        .ingerdient__item {
+          width: 41.67vw;
+          height: 10.67vw;
+          span {
+            font-size: 1.4vw;
+            letter-spacing: 0.35vw;
+          }
+          svg {
+            width: 10.67vw;
+            height: 10.67vw;
+          }
+        }
+        .ingerdient__item--2 {
+          transform: translate(-12.6vw, -2.9vw);
+        }
+        .ingerdient__item--3 {
+          transform: translate(-21vw, -4.38vw);
+        }
+      }
+      // END OF INGREDIENT
     }
   }
 
@@ -673,6 +743,18 @@ ul {
         right: -2.5vw;
       }
       // END OF PRODUCT
+      // INGREDIENT
+      .content__ingredient-label {
+        width: 717px;
+        height: 120px;
+        top: 5416px;
+        right: 0vw;
+      }
+      .content__ingredient-list {
+        top: 5807px;
+        right: 115.64px;
+      }
+      // END OF INGREDIENT
     }
   }
 
@@ -764,6 +846,40 @@ ul {
         min-width: 642px;
       }
       // END OF PRODUCT
+      // INGREDIENT
+      .content__ingredient-label {
+        width: 538px;
+        height: 90px;
+        top: 5435px;
+        right: 2.6vw;
+      }
+      .content__ingredient-list {
+        top: 5714px;
+        right: 116.75px;
+      }
+      .content__ingredient-list {
+        top: 5718px;
+        right: 120.95px;
+        .ingerdient__item {
+          width: 500px;
+          height: 138.34px;
+          span {
+            font-size: 18px;
+            letter-spacing: 4.5px;
+          }
+          svg {
+            width: 138.34px;
+            height: 138.34px;
+          }
+        }
+        .ingerdient__item--2 {
+          transform: translate(-165.37px, -37.8px);
+        }
+        .ingerdient__item--3 {
+          transform: translate(-265.26px, -60.7px);
+        }
+      }
+      // END OF INGREDIENT
     }
   }
 
@@ -994,6 +1110,36 @@ ul {
         }
       }
       // END OF PRODUCT
+      // INGREDIENT
+      .content__ingredient-label {
+        width: 299px;
+        height: 50px;
+        top: 3678px;
+        right: 4.3vw;
+      }
+      .content__ingredient-list {
+        top: 3849.28px;
+        right: 33.28px;
+        .ingerdient__item {
+          width: 300px;
+          height: 101.4px;
+          span {
+            font-size: 13px;
+            letter-spacing: 3.25px;
+          }
+          svg {
+            width: 101.4px;
+            height: 101.4px;
+          }
+        }
+        .ingerdient__item--2 {
+          transform: translate(-94px, -37px);
+        }
+        .ingerdient__item--3 {
+          transform: translate(-150px, -65.7px);
+        }
+      }
+      // END OF INGREDIENT
     }
   }
 }
