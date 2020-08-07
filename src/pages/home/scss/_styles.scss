@@ -479,6 +479,27 @@ ul {
       opacity: 0.5;
     }
     // END OF INGREDIENT
+    // SHOP LIST
+    .content__shop-title {
+      width: 556px;
+      height: 83px;
+      top: 7367px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .content__shop-bar {
+      width: 417px;
+      height: 2px;
+      top: 7522px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .content__shop-list-wrapper {
+      top: 7643px;
+      width: 100%;
+      overflow: scroll;
+    }
+    // END OF SHOP LIST
   }
 
   // 1440px 以上等比例放大
@@ -750,6 +771,21 @@ ul {
         right: 2.3vw;
       }
       // END OF INGREDIENT
+      // SHOP LIST
+      .content__shop-title {
+        width: 38.6vw;
+        height: 5.76vw;
+        top: 511.6vw;
+      }
+      .content__shop-bar {
+        width: 28.96vw;
+        height: 0.13vw;
+        top: 522.36vw;
+      }
+      .content__shop-list-wrapper {
+        top: 530.76vw;
+      }
+      // END OF SHOP LIST
     }
   }
 
@@ -826,6 +862,14 @@ ul {
         right: 21px;
       }
       // END OF INGREDIENT
+      // SHOP LIST
+      .content__shop-title {
+        top: 7361px;
+      }
+      .content__shop-list-wrapper {
+        top: 7645px;
+      }
+      // END OF SHOP LIST
     }
   }
 
@@ -959,6 +1003,13 @@ ul {
         right: 14px;
       }
       // END OF INGREDIENT
+      // SHOP LIST
+      .content__shop-title {
+        top: 7383px;
+        width: 424px;
+        height: 90px;
+      }
+      // END OF SHOP LIST
     }
   }
 
@@ -1246,6 +1297,124 @@ ul {
         letter-spacing: 2.25px;
       }
       // END OF INGREDIENT
+      .content__shop-title {
+        width: 236px;
+        height: 50px;
+        top: 4875px;
+      }
+      .content__shop-bar {
+        top: 4948px;
+        width: 213px;
+        height: 3px;
+      }
+      .content__shop-list-wrapper {
+        top: 5033px;
+      }
+      // END OF SHOP LIST
+    }
+  }
+}
+// shop list is used in MAINCONTENT & MENU
+.shop-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  justify-content: center;
+
+  &__item {
+    margin-right: 34px;
+    display: flex;
+    flex-direction: column;
+    .shop-list__item-img {
+      width: 307px;
+      height: 413px;
+      box-shadow: 0px 7px 20px #802a1599;
+      border-radius: 10px;
+    }
+  }
+  &__item-link {
+    padding: 41.76px 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: $thin;
+    font-size: 19px;
+    letter-spacing: 4.75px;
+    font-family: $main-font;
+    .shop-list__item-arrow {
+      width: 9px;
+      height: 11px;
+      margin-left: 24px;
+    }
+  }
+
+  // 1440px 以上等比例放大
+  @media screen and (min-width: 1441px) {
+    &__item {
+      margin-right: 2.36vw;
+      .shop-list__item-img {
+        width: 21.3vw;
+        height: 28.7vw;
+        border-radius: 0.69vw;
+      }
+    }
+    &__item-link {
+      padding: 2.9vw 0.69vw;
+      font-size: 1.32vw;
+      letter-spacing: 0.33vw;
+      .shop-list__item-arrow {
+        width: 0.625vw;
+        height: 0.76vw;
+        margin-left: 1.67vw;
+      }
+    }
+  }
+
+  // 設計稿：1024px 以上
+  @media screen and (max-width: 1280px) {
+    &__item {
+      margin-right: 11px;
+    }
+  }
+
+  // 設計稿：768px 以上
+  @media screen and (max-width: 1023px) {
+    justify-content: flex-start;
+    // 子元素寬度總和
+    width: fit-content;
+    &__item:first-child {
+      margin-left: 28.78vw;
+    }
+    &__item:last-child {
+      margin-right: 28.78vw;
+    }
+  }
+
+  // 設計稿：手機版
+  @media screen and (max-width: 767px) {
+    &__item {
+      margin-right: 25px;
+      .shop-list__item-img {
+        width: 226px;
+        height: 303px;
+        border-radius: 45px;
+      }
+    }
+    &__item:first-child {
+      margin-left: 22.2vw;
+    }
+    &__item:last-child {
+      margin-right: 22.2vw;
+    }
+    &__item-link {
+      padding: 15px 5px;
+      font-size: 15px;
+      letter-spacing: 3.75px;
+      .shop-list__item-arrow {
+        width: 7px;
+        height: 8px;
+        margin-left: 15px;
+      }
     }
   }
 }
