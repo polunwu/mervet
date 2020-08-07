@@ -218,14 +218,13 @@ ul {
       position: absolute;
     }
     // HEAD
-    .content__title {
+    .brand-title {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
       position: absolute;
-      top: 343px;
       left: 50%;
       transform: translateX(-50%);
 
@@ -241,7 +240,7 @@ ul {
         text-align: center;
       }
       .title__sub {
-        min-width: 454px;
+        max-width: 454px;
         font-size: 24px;
         letter-spacing: 12px;
         padding: 12.6px 53.5px 15.4px 53.5px;
@@ -254,6 +253,9 @@ ul {
         letter-spacing: 6.3px;
         margin-bottom: 113px;
       }
+    }
+    .content__title {
+      top: 343px;
       .title__scroll {
         width: 51px;
         height: 99.5px;
@@ -444,6 +446,8 @@ ul {
     .content__ingredient-describe {
       top: 6465px;
       left: 198px;
+    }
+    .describe {
       width: 384px;
       font-family: $main-font;
       color: $main-color;
@@ -500,6 +504,29 @@ ul {
       overflow: scroll;
     }
     // END OF SHOP LIST
+    // PROCESS
+    .content__process-label {
+      width: 485px;
+      height: 82px;
+      top: 8552px;
+      right: 81.6px;
+    }
+    .content__process-describe {
+      top: 9254px;
+      left: 301px;
+      p {
+        line-height: 38px;
+      }
+    }
+    .content__process-env {
+      top: 9546px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .content__process-title {
+      top: 9883px;
+    }
+    // END OF PROCESS
   }
 
   // 1440px 以上等比例放大
@@ -598,15 +625,13 @@ ul {
 
     &__content {
       // HEAD
-      .content__title {
-        top: 23.82vw;
-
+      .brand-title {
         .title__logo {
           width: 14.63vw;
           height: 1.868vw;
         }
         .title__sub {
-          min-width: 31.53vw;
+          max-width: 31.53vw;
           font-size: 1.67vw;
           letter-spacing: 0.83vw;
           padding: 0.875vw 3.715vw 1.07vw 3.715vw;
@@ -619,6 +644,10 @@ ul {
           letter-spacing: 0.4375vw;
           margin-bottom: 7.85vw;
         }
+      }
+      .content__title {
+        top: 23.82vw;
+
         .title__scroll {
           width: 3.54vw;
           height: 6.9vw;
@@ -749,8 +778,9 @@ ul {
       .content__ingredient-describe {
         top: 449vw;
         left: 13.75vw;
+      }
+      .describe {
         width: 26.7vw;
-
         h4 {
           font-size: 2.1vw;
           letter-spacing: 1.04vw;
@@ -786,6 +816,27 @@ ul {
         top: 530.76vw;
       }
       // END OF SHOP LIST
+      // PROCESS
+      .content__process-label {
+        width: 33.68vw;
+        height: 5.7vw;
+        top: 593.9vw;
+        right: 5.67vw;
+      }
+      .content__process-describe {
+        top: 642.64vw;
+        left: 20.9vw;
+        p {
+          line-height: 2.64vw;
+        }
+      }
+      .content__process-env {
+        top: 662.9vw;
+      }
+      .content__process-title {
+        top: 686.32vw;
+      }
+      // END OF PROCESS
     }
   }
 
@@ -870,6 +921,15 @@ ul {
         top: 7645px;
       }
       // END OF SHOP LIST
+      // PROCESS
+      .content__process-label {
+        top: 8544px;
+        right: 18px;
+      }
+      .content__process-describe {
+        left: 173px;
+      }
+      // END OF PROCESS
     }
   }
 
@@ -937,6 +997,11 @@ ul {
 
     &__content {
       // HEAD
+      .brand-title {
+        .title__sub {
+          width: 380px;
+        }
+      }
       .content__slogan {
         left: 38px;
       }
@@ -1010,6 +1075,23 @@ ul {
         height: 90px;
       }
       // END OF SHOP LIST
+      // PROCESS
+      .content__process-label {
+        top: 8542px;
+        right: 33px;
+        width: 371px;
+      }
+      .content__process-describe {
+        top: 9189px;
+        left: 84px;
+      }
+      .content__process-env {
+        top: 9507px;
+      }
+      .content__process-title {
+        top: 9846px;
+      }
+      // END OF PROCESS
     }
   }
 
@@ -1124,15 +1206,13 @@ ul {
 
     &__content {
       // HEAD
-      .content__title {
-        top: 209px;
-
+      .brand-title {
         .title__logo {
           width: 125px;
           height: 16px;
         }
         .title__sub {
-          min-width: 267px;
+          width: 230px;
           font-size: 15px;
           letter-spacing: 7.5px;
           padding: 7.6px 24px 7.4px 24px;
@@ -1145,6 +1225,9 @@ ul {
           letter-spacing: 3.9px;
           margin-bottom: 87.1px;
         }
+      }
+      .content__title {
+        top: 209px;
       }
       .content__slogan {
         top: 1516px;
@@ -1311,6 +1394,34 @@ ul {
         top: 5033px;
       }
       // END OF SHOP LIST
+      // PROCESS
+      .content__process-label {
+        top: 5592px;
+        right: 23px;
+        width: 206px;
+      }
+      .content__process-describe {
+        top: 5997px;
+        left: 28px;
+        width: 228px;
+        h4 {
+          font-size: 18px;
+          letter-spacing: 5.4px;
+          margin-bottom: 28.3px;
+        }
+        p {
+          font-size: 14px;
+          letter-spacing: 1.4px;
+          line-height: 25px;
+        }
+      }
+      .content__process-env {
+        top: 6161px;
+      }
+      .content__process-title {
+        top: 6385px;
+      }
+      // END OF PROCESS
     }
   }
 }
