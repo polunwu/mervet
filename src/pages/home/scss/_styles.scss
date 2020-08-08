@@ -1,10 +1,12 @@
 // VARIABLES
 $main-color: #4d4d4d;
+$second-color: #8d8d8d;
 $brown: #a73d0d;
 $main-font: "PingFang TC";
 $ultraligh: 100;
 $light: 200;
 $thin: 300;
+$regular: 400;
 $semi-bold: 600;
 
 // GENERAL
@@ -251,6 +253,7 @@ ul {
       .title__third {
         font-size: 21px;
         letter-spacing: 6.3px;
+        margin-top: 0;
         margin-bottom: 113px;
       }
     }
@@ -526,7 +529,84 @@ ul {
     .content__process-title {
       top: 9883px;
     }
+    .content__process-media {
+      top: 10135px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .media__fb,
+      .media__ig {
+        width: 44px;
+        height: 45px;
+      }
+      .media__fb {
+        margin-right: 68px;
+      }
+    }
     // END OF PROCESS
+    // FOOTER
+    .content__footer-allrights {
+      left: 29px;
+      bottom: 22px;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      font-weight: $light;
+      color: $second-color;
+    }
+    .content__footer-priciples {
+      left: 15.73vw;
+      bottom: 61px;
+      font-family: $main-font;
+      color: $second-color;
+      display: flex;
+      flex-direction: column;
+      .principles__title {
+        font-weight: $semi-bold;
+        line-height: 28px;
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin: 0;
+        margin-bottom: 17px;
+      }
+      .principles__describe-wrapper {
+        display: flex;
+        flex-direction: row;
+        font-weight: $thin;
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 20.6px;
+        .principles__describe {
+          width: 223px;
+          margin: 0px;
+          margin-left: 59px;
+        }
+      }
+    }
+    .content__footer-links {
+      width: 440px;
+      bottom: 55.6px;
+      right: 135px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .footer__link {
+        text-align: center;
+        display: block;
+        width: 205px;
+        height: 40px;
+        background-color: #fff;
+        box-shadow: 0px 3px 7px #acb9babf;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 10px 10px 9px 10px;
+        margin: 0px 6px 17.6px 6px;
+        color: $second-color;
+        font-weight: $regular;
+        font-size: 15px;
+        letter-spacing: 6px;
+      }
+    }
+    // END OF FOOTER
   }
 
   // 1440px 以上等比例放大
@@ -836,7 +916,60 @@ ul {
       .content__process-title {
         top: 686.32vw;
       }
+      .content__process-media {
+        top: 703.82vw;
+
+        .media__fb,
+        .media__ig {
+          width: 3.05vw;
+          height: 3.125vw;
+        }
+        .media__fb {
+          margin-right: 4.72vw;
+        }
+      }
       // END OF PROCESS
+      // FOOTER
+      .content__footer-allrights {
+        left: 2vw;
+        bottom: 1.53vw;
+        font-size: 0.83vw;
+        letter-spacing: 0.1vw;
+      }
+      .content__footer-priciples {
+        left: 15.73vw;
+        bottom: 4.24vw;
+        .principles__title {
+          line-height: 1.94vw;
+          font-size: 1.39vw;
+          letter-spacing: 0.28vw;
+          margin-bottom: 1.18vw;
+        }
+        .principles__describe-wrapper {
+          font-size: 0.83vw;
+          line-height: 1.43vw;
+          .principles__describe {
+            width: 15.48vw;
+            margin-left: 4.1vw;
+          }
+        }
+      }
+      .content__footer-links {
+        width: 30.56vw;
+        bottom: 3.86vw;
+        right: 9.375vw;
+
+        .footer__link {
+          width: 14.24vw;
+          height: 2.78vw;
+          border-radius: 1.39vw;
+          padding: 0.69vw 0.69vw 0.625vw 0.69vw;
+          margin: 0px 0.42vw 1.22vw 0.42vw;
+          font-size: 1.04vw;
+          letter-spacing: 0.41vw;
+        }
+      }
+      // END OF FOOTER
     }
   }
 
@@ -930,6 +1063,15 @@ ul {
         left: 173px;
       }
       // END OF PROCESS
+      // FOOTER
+      .content__footer-priciples {
+        left: 3.56vw;
+        bottom: 61.22px;
+      }
+      .content__footer-links {
+        right: 3.9vw;
+      }
+      // END OF FOOTER
     }
   }
 
@@ -938,6 +1080,9 @@ ul {
     &__bg {
       .bg__1 {
         background-position-x: 35%;
+      }
+      .bg__footer {
+        height: 321px;
       }
     }
 
@@ -1091,7 +1236,33 @@ ul {
       .content__process-title {
         top: 9846px;
       }
+      .content__process-media {
+        top: 10098px;
+      }
       // END OF PROCESS
+      // FOOTER
+      .content__footer-priciples {
+        left: 3.9vw;
+        bottom: 75px;
+        .principles__title {
+          margin-bottom: 29px;
+        }
+        .principles__describe-wrapper {
+          flex-direction: column;
+          .principles__describe-list {
+            margin-bottom: 29px;
+          }
+          .principles__describe {
+            width: 223px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .content__footer-links {
+        right: 5.34vw;
+        bottom: 131px;
+      }
+      // END OF FOOTER
     }
   }
 
@@ -1421,7 +1592,48 @@ ul {
       .content__process-title {
         top: 6385px;
       }
+      .content__process-media {
+        top: 6540px;
+
+        .media__fb,
+        .media__ig {
+          width: 28px;
+          height: 28px;
+        }
+        .media__fb {
+          margin-right: 42px;
+        }
+      }
       // END OF PROCESS
+      // FOOTER
+      .content__footer-priciples {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 303px;
+        .principles__title {
+          margin-bottom: 48px;
+          text-align: center;
+        }
+        .principles__describe-wrapper {
+          flex-direction: column;
+          .principles__describe-list {
+            margin-bottom: 30px;
+          }
+          .principles__describe {
+            width: 84.8vw;
+            max-width: 351px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .content__footer-links {
+        right: 50%;
+        bottom: 89.6px;
+        transform: translateX(50%);
+        flex-direction: column;
+        align-items: center;
+      }
+      // END OF FOOTER
     }
   }
 }
