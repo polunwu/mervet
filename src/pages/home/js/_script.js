@@ -1,3 +1,7 @@
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
+
 window.addEventListener('load', () => {
   // TOGGLE MENU
   const menu = document.querySelector('.js-menu')
@@ -8,4 +12,7 @@ window.addEventListener('load', () => {
     toggleNav.classList.toggle('is-open')
   })
   // END OF TOGGLE MENU
+
+  // GSAP SCROLL TRIGGER
+  // END OF GSAP SCROLL TRIGGER
 })
