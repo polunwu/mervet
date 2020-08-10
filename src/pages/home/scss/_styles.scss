@@ -71,13 +71,15 @@ ul {
     background: url("../../../assets/images/fixbg_fashion.jpg") center center
       no-repeat;
     background-size: cover;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
   &__pure {
     background: url("../../../assets/images/fixbg_pure.jpg") center center
       no-repeat;
     background-size: cover;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   // 設計稿：1024px 以上
@@ -100,13 +102,7 @@ ul {
 
   // 設計稿：手機版
   @media screen and (max-width: 767px) {
-    &__maker {
-      // 此大小滑動時會有白邊
-      background-size: auto 504px;
-      background-position-x: 60%;
-    }
     &__fashion {
-      background-size: auto 80%;
       background-position-x: 72%;
     }
   }
