@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
   const toggleNav = document.querySelector('.js-toggle-nav')
 
   toggleNav.addEventListener('click', () => {
+    console.log('toggleNav ticked')
     menu.classList.toggle('is-open')
     toggleNav.classList.toggle('is-open')
   })
