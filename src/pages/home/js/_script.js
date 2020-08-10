@@ -36,7 +36,33 @@ window.addEventListener('load', () => {
   let ingredListTl = registerIngredListTl()
   // product img
   let productImgTl = registerProductImgTl()
-  // fashion img
+  // circle layer
+  gsap.timeline({ 
+    repeat: -1,
+    defaults: {      
+      stagger: 0.3,
+      ease: 'Sine.easeInOut',
+    } 
+  })
+  .fromTo('.js-circle-layer', 
+    {
+      r: 0,
+    }, 
+    { 
+      r: 76.855,
+      duration: 3,
+    }
+  )
+  .fromTo('.js-circle-layer', 
+    {
+      autoAlpha: 0.146,
+    }, 
+    { 
+      autoAlpha: 0.01,
+      duration: 1.5,
+    }
+    , '1.5'
+  )
 
   // END OF GSAP SCROLL TRIGGER
 })
@@ -122,7 +148,7 @@ function registerHeadCardTl() {
       start: 'top 25%',
       end: 'bottom+=170% bottom',
       pin: true,
-      scrub: 0.1,
+      scrub: 0.8,
       // markers: true,
     }
   })
@@ -145,7 +171,8 @@ function registerFixBgMakerTl() {
   })
   .set('.js-fixbg-maker', { autoAlpha: 1, })
   .to('.js-fixbg-maker', {
-    scale: 1.05,
+    y: -50,
+    scale: 1.04,
   }) 
 }
 function registerFixBgFashionTl() {
@@ -161,7 +188,8 @@ function registerFixBgFashionTl() {
   .set('.js-fixbg-maker', { autoAlpha: 0, })
   .set('.js-fixbg-fashion', { autoAlpha: 1, })
   .to('.js-fixbg-fashion', {
-    scale: 1.05,
+    y: -50,
+    scale: 1.04,
   })
   .from('.js-fashion-obj-1', {
     y: 100,
@@ -193,6 +221,7 @@ function registerFixBgPureTl() {
   .set('.js-fixbg-fashion', { autoAlpha: 0, })
   .set('.js-fixbg-pure', { autoAlpha: 1, })
   .to('.js-fixbg-pure', {
-    scale: 1.05,
+    y: -50,
+    scale: 1.04,
   }) 
 }

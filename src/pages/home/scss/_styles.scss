@@ -48,10 +48,10 @@ ul {
 // FIXBG
 .fixbg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -50px;
+  left: -50px;
+  width: calc(100% + 100px);
+  height: calc(100% + 100px);
   z-index: -1;
 
   &__img {
@@ -508,6 +508,19 @@ ul {
       line-height: 95px;
       font-size: 24px;
       letter-spacing: 6px;
+
+      transition: transform 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+        box-shadow 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .btn--wt:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 17px 25px #acb9babf;
+    }
+    .btn--wt:active {
+      transition-duration: 0s;
+      background-color: rgb(230, 230, 230);
+      transform: translateY(5px);
+      box-shadow: 0px 2px 20px #acb9babf;
     }
     // END OF PRODUCT
     // INGREDIENT
@@ -574,6 +587,9 @@ ul {
       left: 50%;
       transform: translateX(-50%);
     }
+    .content__ingredient-buy:hover {
+      transform: translate(-50%, -10px);
+    }
     .content__ingredient-warn {
       top: 6205px;
       right: 33.17px;
@@ -625,6 +641,9 @@ ul {
       top: 9546px;
       left: 50%;
       transform: translateX(-50%);
+    }
+    .content__process-env:hover {
+      transform: translate(-50%, -10px);
     }
     .content__process-title {
       top: 9883px;
@@ -1757,6 +1776,7 @@ ul {
     }
   }
   &__item-link {
+    display: block;
     padding: 41.76px 10px;
     text-align: center;
     color: #fff;
