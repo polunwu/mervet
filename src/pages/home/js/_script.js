@@ -2,6 +2,11 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
+// 變換裝置大小時重整頁面
+window.addEventListener('resize', () => {
+  location.reload()
+})
+
 window.addEventListener('load', () => {
   // TOGGLE MENU
   const menu = document.querySelector('.js-menu')
@@ -18,21 +23,107 @@ window.addEventListener('load', () => {
   let fixbgMakerTl = registerFixBgMakerTl()
   let fixbgFashionTl = registerFixBgFashionTl()
   let fixbgPureTl = registerFixBgPureTl()
+
   // head cards
   let headCardTl = registerHeadCardTl()
+
+  // sroll & reveal elements
+  // titles
+  gsap.utils.toArray('.js-t-title').forEach(el => {
+    registerTitleTw(el)
+  })
+  // ingredient list
+  let ingredListTl = registerIngredListTl()
+  // product img
+  let productImgTl = registerProductImgTl()
+  // fashion img
+
   // END OF GSAP SCROLL TRIGGER
 })
+
+function registerProductImgTl() {
+  return gsap.timeline({
+    scrollTrigger: {
+      trigger: '.js-t-disp',
+      // top of trigger el hits 70% of viewport
+      start: 'top 70%',
+      end: 'top+=800% 70%', 
+      scrub: 1,
+      markers: true,
+    },
+    defaults: {
+      ease: 'Power1.easeInOut',
+    }
+  })
+  .from('.js-disp-1', {
+    autoAlpha: 0.2,
+    x: '-15vw',
+    y: -50,
+    rotate: '20deg'
+  }, '0.1')
+  .from('.js-disp-2', {
+    autoAlpha: 0.2,
+    x: '-5vw',
+    y: 10,
+    rotate: '7deg'
+  }, '0.1')
+  .from('.js-disp-3', {
+    autoAlpha: 0.2,
+    y: -20,
+    rotate: '8deg'
+  }, '0')
+}
+function registerTitleTw(el) {
+  gsap.fromTo(
+      el,
+      { autoAlpha: 0, y: 10 },
+      {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+        },
+        autoAlpha: 1,
+        y: 0,
+        duration: 3,
+        ease: 'Sine.easeOut',
+      }
+    )
+}
+function registerIngredListTl() {
+  return gsap.timeline({
+    scrollTrigger: {
+      trigger: '.js-ingred-list',
+      start: 'top 70%',
+      // markers: true,
+    }, 
+    defaults: {
+      ease: 'Power1.easeInOut',
+      duration: 2,
+  }})
+  .from('.js-ingred-1', {
+    x: -50,
+    autoAlpha: 0,
+  }) 
+  .from('.js-ingred-2', {
+    x: -50,
+    autoAlpha: 0,
+  }, '0.5') 
+  .from('.js-ingred-3', {
+    x: -50,
+    autoAlpha: 0,
+  }, '1') 
+}
 function registerHeadCardTl() {
   return gsap.timeline({
     scrollTrigger: {
       trigger: '.js-t-head-card',
-      // top of trigger hits bottom of viewport
+      // top of trigger hits 25% of viewport
       start: 'top 25%',
-      // 30% height beyond trigger hits the top of viewport 
       end: 'bottom+=170% bottom',
       pin: true,
       scrub: 0.1,
-      markers: true,
+      // markers: true,
     }
   })
   .to('.js-t-head-card', {
