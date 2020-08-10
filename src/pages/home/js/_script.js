@@ -3,9 +3,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 // 變換裝置大小時重整頁面
-window.addEventListener('resize', () => {
-  location.reload()
-})
+// window.addEventListener('resize', () => {
+//   location.reload()
+// })
 
 window.addEventListener('load', () => {
   // TOGGLE MENU
