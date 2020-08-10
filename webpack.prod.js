@@ -41,7 +41,14 @@ module.exports = {
                 test: /\.(scss|css|sass)$/,
                 use: [
                     {
-                        loader: MiniCssExtractPlugin.loader
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            // ! 注意！
+                            // 因為自訂了 MiniCssExtractPlugin 檔案路徑
+                            // 會造成 css 內的 background-image url 路徑解析錯誤
+                            // 因此要將 public path 指回根目錄
+                            publicPath: '../../'
+                        }
                     },
                     {
                         // translates CSS into CommonJS
@@ -146,7 +153,7 @@ module.exports = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: './assets/css/[name].[contenthash].css'
+            filename: './assets/css/[name].[contenthash].css',
         }),
         new OptimizeCssAssetsPlugin({
             cssProcessor: require('cssnano'),
