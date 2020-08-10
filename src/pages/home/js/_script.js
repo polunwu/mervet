@@ -49,7 +49,7 @@ function registerProductImgTl() {
       start: 'top 70%',
       end: 'top+=800% 70%', 
       scrub: 1,
-      markers: true,
+      // markers: true,
     },
     defaults: {
       ease: 'Power1.easeInOut',
@@ -162,7 +162,22 @@ function registerFixBgFashionTl() {
   .set('.js-fixbg-fashion', { autoAlpha: 1, })
   .to('.js-fixbg-fashion', {
     scale: 1.05,
-  }) 
+  })
+  .from('.js-fashion-obj-1', {
+    y: 100,
+    x: -10,
+    rotate: '10deg',
+  }, '0') 
+  .from('.js-fashion-obj-2', {
+    y: 150,
+    x: -50,
+    rotate: '14deg',
+  }, '0') 
+  .from('.js-fashion-obj-3', {
+    y: 180,
+    x: -175,
+    rotate: '25deg',
+  }, '0') 
 }
 function registerFixBgPureTl() {
   return gsap.timeline({

@@ -73,6 +73,28 @@ ul {
     background-size: cover;
     opacity: 0;
     visibility: hidden;
+
+    .fixbg__fashion-obj {
+      position: absolute;
+    }
+    .fashion-obj--1 {
+      width: 452px;
+      height: 456px;
+      top: -100px;
+      right: 133px;
+    }
+    .fashion-obj--2 {
+      width: 397px;
+      height: 486px;
+      top: 326px;
+      right: 188px;
+    }
+    .fashion-obj--3 {
+      width: 596px;
+      height: 621px;
+      top: 440px;
+      right: 562px;
+    }
   }
   &__pure {
     background: url("../../../assets/images/fixbg_pure.jpg") center center
@@ -80,6 +102,30 @@ ul {
     background-size: cover;
     opacity: 0;
     visibility: hidden;
+  }
+
+  // 1440px 以上等比例放大
+  @media screen and (min-width: 1441px) {
+    &__fashion {
+      .fashion-obj--1 {
+        width: 31.4vw;
+        height: 31.67vw;
+        top: -6.9vw;
+        right: 9.2vw;
+      }
+      .fashion-obj--2 {
+        width: 27.57vw;
+        height: 33.75vw;
+        top: 22.64vw;
+        right: 13.05vw;
+      }
+      .fashion-obj--3 {
+        width: 41.4vw;
+        height: 43.1vw;
+        top: 30.56vw;
+        right: 39vw;
+      }
+    }
   }
 
   // 設計稿：1024px 以上
@@ -98,12 +144,39 @@ ul {
       background-size: auto 140%;
       background-position-x: 62%;
     }
+    .fashion-obj--1 {
+      right: -123px;
+    }
+    .fashion-obj--2 {
+      right: -68px;
+    }
+    .fashion-obj--3 {
+      right: 306px;
+    }
   }
 
   // 設計稿：手機版
   @media screen and (max-width: 767px) {
     &__fashion {
       background-position-x: 72%;
+      .fashion-obj--1 {
+        width: 205px;
+        height: 206px;
+        top: 0px;
+        right: -6px;
+      }
+      .fashion-obj--2 {
+        width: 180px;
+        height: 221px;
+        top: 192px;
+        right: 20px;
+      }
+      .fashion-obj--3 {
+        width: 270px;
+        height: 281px;
+        top: 260px;
+        right: 192px;
+      }
     }
   }
 }
