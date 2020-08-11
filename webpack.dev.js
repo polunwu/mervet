@@ -3,6 +3,11 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    resolve: {
+        alias: {
+            '@img': path.resolve(__dirname, 'src/assets/images'),
+        },
+    },
     devtool: 'eval-cheap-module-source-map',
     entry: {
         index: './src/pages/home/index.js',

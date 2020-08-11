@@ -63,13 +63,11 @@ ul {
   }
 
   &__maker {
-    background: url("../../../assets/images/fixbg_maker.jpeg") center center
-      no-repeat;
+    background: url("~@img/fixbg_maker.jpeg") center center no-repeat;
     background-size: cover;
   }
   &__fashion {
-    background: url("../../../assets/images/fixbg_fashion.jpg") center center
-      no-repeat;
+    background: url("~@img/fixbg_fashion.jpg") center center no-repeat;
     background-size: cover;
     opacity: 0;
     visibility: hidden;
@@ -97,8 +95,7 @@ ul {
     }
   }
   &__pure {
-    background: url("../../../assets/images/fixbg_pure.jpg") center center
-      no-repeat;
+    background: url("~@img/fixbg_pure.jpg") center center no-repeat;
     background-size: cover;
     opacity: 0;
     visibility: hidden;
@@ -198,21 +195,21 @@ ul {
       background-position: top center;
     }
     .bg__1 {
-      background-image: url("../../../assets/images/bg-1.png");
+      background-image: url("~@img/bg-1.png");
       height: 2614px;
     }
     .bg__2 {
-      background-image: url("../../../assets/images/bg-2.png");
+      background-image: url("~@img/bg-2.png");
       height: 1499px;
       margin-top: 552px;
     }
     .bg__3 {
-      background-image: url("../../../assets/images/bg-3.png");
+      background-image: url("~@img/bg-3.png");
       height: 2100.7px;
       margin-top: 531px;
     }
     .bg__4 {
-      background-image: url("../../../assets/images/bg-4.png");
+      background-image: url("~@img/bg-4.png");
       height: 2107px;
       margin-top: 1120.3px;
     }
@@ -410,13 +407,13 @@ ul {
         }
       }
       .card--1 {
-        background-image: url("../../../assets/images/prod-1.png");
+        background-image: url("~@img/prod-1.png");
       }
       .card--2 {
-        background-image: url("../../../assets/images/prod-2.png");
+        background-image: url("~@img/prod-2.png");
       }
       .card--3 {
-        background-image: url("../../../assets/images/prod-3.png");
+        background-image: url("~@img/prod-3.png");
       }
     }
     .content__slogan {

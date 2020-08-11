@@ -9,6 +9,11 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
+    resolve: {
+        alias: {
+            '@img': path.resolve(__dirname, 'src/assets/images'),
+        },
+    },
     devtool: 'source-map',
     entry: {
         index: './src/pages/home/index.js',
