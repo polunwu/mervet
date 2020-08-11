@@ -14,13 +14,15 @@ window.addEventListener('load', () => {
   })
   
   // TOGGLE MENU
+  window.menuIsOpen = false
   const menu = document.querySelector('.js-menu')
   const toggleNav = document.querySelector('.js-toggle-nav')
-
+  const toggleNavBars = toggleNav.querySelectorAll('.js-toggle-nav-bar')
+  
   toggleNav.addEventListener('click', () => {
-    console.log('toggleNav ticked')
-    menu.classList.toggle('is-open')
-    toggleNav.classList.toggle('is-open')
+    if (menuIsOpen) hideMenu(menu, toggleNavBars)
+    else openMenu(menu, toggleNavBars)
+    window.menuIsOpen = !window.menuIsOpen
   })
   // END OF TOGGLE MENU
 
@@ -46,6 +48,21 @@ window.addEventListener('load', () => {
   let productImgTl = registerProductImgTl()
   // END OF GSAP SCROLL TRIGGER
 })
+
+function openMenu(menu, toggleNavBars) {
+  menu.style.opacity = '1'
+  menu.style.visibility = 'visible'
+  toggleNavBars[0].style.transform = 'rotate(45deg) translate(5px, 6px)'
+  toggleNavBars[1].style.opacity = '0'
+  toggleNavBars[2].style.transform = 'rotate(-45deg) translate(5px, -6px)'
+}
+function hideMenu(menu, toggleNavBars) {
+  menu.style.opacity = '0'
+  menu.style.visibility = 'hidden'
+  toggleNavBars[0].style.transform = 'none'
+  toggleNavBars[1].style.opacity = '1'
+  toggleNavBars[2].style.transform = 'none'
+}
 
 function getViewWidth() {
   return window.innerWidth || 0

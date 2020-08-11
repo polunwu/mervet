@@ -1893,11 +1893,11 @@ ul {
         height: 3px;
         background-color: $main-color;
         box-sizing: border-box;
+        transform-origin: 50% 50%;
       }
     }
     .menu__toggle-nav.is-open {
       .toogle-nav__bar:first-child {
-        transform-origin: 50% 50%;
         transform: rotate(45deg) translate(5px, 6px);
       }
       .toogle-nav__bar:nth-child(2) {
@@ -1954,10 +1954,6 @@ ul {
         }
       }
     }
-  }
-  .menu__navigation.is-open {
-    opacity: 1;
-    visibility: visible;
   }
 
   // 1440px 以上等比例放大
