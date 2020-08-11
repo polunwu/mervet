@@ -2,12 +2,17 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
-// 變換裝置大小時重整頁面
-// window.addEventListener('resize', () => {
-//   location.reload()
-// })
-
 window.addEventListener('load', () => {
+  //取得裝置寬
+  window.currentWidth = getViewWidth()
+  //變換裝置寬度時重整頁面
+  window.addEventListener('resize', (e) => {
+    let newWidth = getViewWidth()
+    if (newWidth !== currentWidth) {
+      location.reload()
+    }
+  })
+  
   // TOGGLE MENU
   const menu = document.querySelector('.js-menu')
   const toggleNav = document.querySelector('.js-toggle-nav')
@@ -35,10 +40,19 @@ window.addEventListener('load', () => {
   })
   // ingredient list
   let ingredListTl = registerIngredListTl()
+  // circle layer
+  let circleLayerTl = registerCircleLayerTl()
   // product img
   let productImgTl = registerProductImgTl()
-  // circle layer
-  gsap.timeline({ 
+  // END OF GSAP SCROLL TRIGGER
+})
+
+function getViewWidth() {
+  return window.innerWidth || 0
+}
+
+function registerCircleLayerTl() {
+  return gsap.timeline({ 
     repeat: -1,
     defaults: {      
       stagger: 0.3,
@@ -64,9 +78,7 @@ window.addEventListener('load', () => {
     }
     , '1.5'
   )
-
-  // END OF GSAP SCROLL TRIGGER
-})
+}
 
 function registerProductImgTl() {
   return gsap.timeline({
