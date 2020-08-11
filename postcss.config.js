@@ -11,6 +11,8 @@ module.exports = {
     plugins: [
         /*
         * Remove unused CSS
+        * 如要保留預設但尚未使用的 class，如 .is-open, .btn--warning
+        * 需把 purgecss 移除
         */
         purgecss({
             content: ['./**/*.html']
