@@ -50,8 +50,8 @@ ul {
   position: fixed;
   top: -50px;
   left: -50px;
-  width: calc(100% + 100px);
-  height: calc(100% + 100px);
+  width: calc(100vw + 100px);
+  height: calc(100vh + 100px);
   z-index: -1;
 
   &__img {
