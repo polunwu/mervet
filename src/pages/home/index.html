@@ -1,542 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mervet</title>
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" value="Webpack basic starter project" />
-    <meta
-      name="Description"
-      content="A simple webpack starter project for your basic web development needs."
-    />
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Webpack basic starter project" />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://lifenautjoe.github.io/webpack-starter-basic/"
-    />
-    <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
-    <meta
-      property="og:description"
-      content="A simple webpack starter project for your basic web development needs."
-    />
-    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#fff" />
-    <!-- Mobile header color Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#fff" />
-    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  </head>
 
-  <body>
-    <!-- DEMO Project page content STARTS -->
-    <div class="fixbg">
-      <div class="fixbg__img fixbg__maker js-fixbg-maker"></div>
-      <div class="fixbg__img fixbg__fashion js-fixbg-fashion">
-        <img
-          class="fixbg__fashion-obj fashion-obj--1 js-fashion-obj-1"
-          src="../../assets/images/fixbg_fashion-1@2x.png"
-          alt="fashion object"
-        />
-        <img
-          class="fixbg__fashion-obj fashion-obj--2 js-fashion-obj-2"
-          src="../../assets/images/fixbg_fashion-2@2x.png"
-          alt="fashion object"
-        />
-        <img
-          class="fixbg__fashion-obj fashion-obj--3 js-fashion-obj-3"
-          src="../../assets/images/fixbg_fashion-3@2x.png"
-          alt="fashion object"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mervet</title>
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" value="Webpack basic starter project" />
+  <meta name="Description" content="A simple webpack starter project for your basic web development needs." />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Webpack basic starter project" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/" />
+  <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
+  <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
+  <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#fff" />
+  <!-- Mobile header color Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#fff" />
+  <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+</head>
+
+<body>
+  <div id="loading" class="loading">
+    <div class="loading__container">
+      <img src="../../assets/images/svg/loading.svg" alt="loading">
+      <div class="loading__percent">
+        <span id="loading_text">0</span>
+        <img src="../../assets/images/svg/loading_percent.svg" alt="">
       </div>
-      <div class="fixbg__img fixbg__pure js-fixbg-pure"></div>
     </div>
-    <div class="maincontent">
-      <div class="maincontent__bg">
-        <div class="bg bg__1 js-t-bg1"></div>
-        <div class="bg bg__2 js-t-bg2"></div>
-        <div class="bg bg__3 js-t-bg3"></div>
-        <div class="bg bg__4"></div>
-        <div class="bg__footer"></div>
+  </div>
+  <div class="fixbg">
+    <div class="fixbg__img fixbg__maker js-fixbg-maker"></div>
+    <div class="fixbg__img fixbg__fashion js-fixbg-fashion">
+      <img class="fixbg__fashion-obj fashion-obj--1 js-fashion-obj-1" src="../../assets/images/fixbg_fashion-1@2x.png"
+        alt="fashion object" />
+      <img class="fixbg__fashion-obj fashion-obj--2 js-fashion-obj-2" src="../../assets/images/fixbg_fashion-2@2x.png"
+        alt="fashion object" />
+      <img class="fixbg__fashion-obj fashion-obj--3 js-fashion-obj-3" src="../../assets/images/fixbg_fashion-3@2x.png"
+        alt="fashion object" />
+    </div>
+    <div class="fixbg__img fixbg__pure js-fixbg-pure"></div>
+  </div>
+  <div class="maincontent">
+    <div class="maincontent__bg">
+      <div class="bg bg__1 js-t-bg1"></div>
+      <div class="bg bg__2 js-t-bg2"></div>
+      <div class="bg bg__3 js-t-bg3"></div>
+      <div class="bg bg__4"></div>
+      <div class="bg__footer"></div>
+    </div>
+    <div class="maincontent__overlay">
+      <div class="overlay__head">
+        <img class="overlay__obj obj__1" src="../../assets/images/obj-1@2x.png" alt="" />
+        <img class="overlay__obj obj__2" src="../../assets/images/obj-2@2x.png" alt="" />
+        <img class="overlay__obj obj__3" src="../../assets/images/obj-3@2x.png" alt="" />
+        <img class="overlay__obj obj__3--mobile" src="../../assets/images/obj-3@2x.png" alt="" />
+        <img class="overlay__obj obj__4" src="../../assets/images/obj-4@2x.png" alt="" />
       </div>
-      <div class="maincontent__overlay">
-        <div class="overlay__head">
-          <img
-            class="overlay__obj obj__1"
-            src="../../assets/images/obj-1@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__2"
-            src="../../assets/images/obj-2@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__3"
-            src="../../assets/images/obj-3@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__3--mobile"
-            src="../../assets/images/obj-3@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__4"
-            src="../../assets/images/obj-4@2x.png"
-            alt=""
-          />
+      <div class="overlay__product">
+        <img class="overlay__obj obj__5" src="../../assets/images/obj-5@2x.png" alt="" />
+        <img class="overlay__obj obj__6" src="../../assets/images/obj-6@2x.png" alt="" />
+      </div>
+      <div class="overlay__ingredient">
+        <img class="overlay__obj obj__7" src="../../assets/images/obj-7@2x.png" alt="" />
+        <img class="overlay__obj obj__8" src="../../assets/images/obj-8@2x.png" alt="" />
+        <img class="overlay__obj obj__9" src="../../assets/images/obj-9@2x.png" alt="" />
+      </div>
+      <div class="overlay__process">
+        <img class="overlay__obj obj__sakura" src="../../assets/images/obj-sakura@2x.png" alt="" />
+        <img class="overlay__obj obj__10" src="../../assets/images/obj-10@2x.png" alt="" />
+        <img class="overlay__obj obj__11" src="../../assets/images/obj-11@2x.png" alt="" />
+      </div>
+    </div>
+    <div class="maincontent__content">
+      <div class="content__head">
+        <div class="content content__title brand-title js-t-title">
+          <img class="title__logo" src="../../assets/images/svg/logo.svg" alt="" />
+          <h2 class="title__sub">護膚與時尚｜缺一不可</h2>
+          <h3 class="title__third">妳專屬的修復保養的專家</h3>
+          <img class="title__scroll" src="../../assets/images/svg/scroll.svg" alt="scroll" />
         </div>
-        <div class="overlay__product">
-          <img
-            class="overlay__obj obj__5"
-            src="../../assets/images/obj-5@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__6"
-            src="../../assets/images/obj-6@2x.png"
-            alt=""
-          />
-        </div>
-        <div class="overlay__ingredient">
-          <img
-            class="overlay__obj obj__7"
-            src="../../assets/images/obj-7@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__8"
-            src="../../assets/images/obj-8@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__9"
-            src="../../assets/images/obj-9@2x.png"
-            alt=""
-          />
-        </div>
-        <div class="overlay__process">
-          <img
-            class="overlay__obj obj__sakura"
-            src="../../assets/images/obj-sakura@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__10"
-            src="../../assets/images/obj-10@2x.png"
-            alt=""
-          />
-          <img
-            class="overlay__obj obj__11"
-            src="../../assets/images/obj-11@2x.png"
-            alt=""
-          />
+        <ul class="content content__card-list js-t-head-card">
+          <a style="display: block;">
+            <li class="content__card card--1">
+              <div class="card__info">
+                <div class="card__title">櫻花修護生物纖維面膜</div>
+                <div class="card__price">NT$<span>1,200</span></div>
+              </div>
+            </li>
+          </a>
+          <a style="display: block;">
+            <li class="content__card card--2">
+              <div class="card__info">
+                <div class="card__title">櫻花修護生物纖維面膜</div>
+                <div class="card__price">NT$<span>1,200</span></div>
+              </div>
+            </li>
+          </a>
+          <a style="display: block;">
+            <li class="content__card card--3">
+              <div class="card__info">
+                <div class="card__title">櫻花修護生物纖維面膜</div>
+                <div class="card__price">NT$<span>1,200</span></div>
+              </div>
+            </li>
+          </a>
+        </ul>
+        <h1 class="content content__slogan js-t-title">
+          喚醒最初、<br />最原始的美
+        </h1>
+        <img class="content content__brand-serif" src="../../assets/images/svg/brand_serif.svg" alt="brand_serif" />
+      </div>
+      <div class="content__product">
+        <img class="content content__disp--1 js-disp-1" src="../../assets/images/disp-1@2x.png" alt="product display" />
+        <img class="content content__disp--2 js-disp-2" src="../../assets/images/disp-2@2x.png" alt="product display" />
+        <img class="content content__disp--3 js-disp-3" src="../../assets/images/disp-3@2x.png" alt="product display" />
+        <img class="content content__brand-serif--white" src="../../assets/images/svg/brand_serif_white.svg"
+          alt="product display" />
+        <div class="content content__cure">
+          <h1 class="cure__slogan js-t-title">奇癒之手<br />梅爾瓦特</h1>
+          <p class="cure__sub js-t-disp">
+            高級大馬士玫瑰花蒸餾水<br />台灣獨家櫻花萃取技術
+          </p>
+          <a href="" class="btn--wt cure__see-more">相關產品</a>
         </div>
       </div>
-      <div class="maincontent__content">
-        <div class="content__head">
-          <div class="content content__title brand-title js-t-title">
-            <img
-              class="title__logo"
-              src="../../assets/images/svg/logo.svg"
-              alt=""
-            />
-            <h2 class="title__sub">護膚與時尚｜缺一不可</h2>
-            <h3 class="title__third">妳專屬的修復保養的專家</h3>
-            <img
-              class="title__scroll"
-              src="../../assets/images/svg/scroll.svg"
-              alt="scroll"
-            />
-          </div>
-          <ul class="content content__card-list js-t-head-card">
-            <a style="display: block;"
-              ><li class="content__card card--1">
-                <div class="card__info">
-                  <div class="card__title">櫻花修護生物纖維面膜</div>
-                  <div class="card__price">NT$<span>1,200</span></div>
-                </div>
-              </li></a
-            >
-            <a style="display: block;"
-              ><li class="content__card card--2">
-                <div class="card__info">
-                  <div class="card__title">櫻花修護生物纖維面膜</div>
-                  <div class="card__price">NT$<span>1,200</span></div>
-                </div>
-              </li></a
-            >
-            <a style="display: block;"
-              ><li class="content__card card--3">
-                <div class="card__info">
-                  <div class="card__title">櫻花修護生物纖維面膜</div>
-                  <div class="card__price">NT$<span>1,200</span></div>
-                </div>
-              </li></a
-            >
-          </ul>
-          <h1 class="content content__slogan js-t-title">
-            喚醒最初、<br />最原始的美
-          </h1>
-          <img
-            class="content content__brand-serif"
-            src="../../assets/images/svg/brand_serif.svg"
-            alt="brand_serif"
-          />
-        </div>
-        <div class="content__product">
-          <img
-            class="content content__disp--1 js-disp-1"
-            src="../../assets/images/disp-1@2x.png"
-            alt="product display"
-          />
-          <img
-            class="content content__disp--2 js-disp-2"
-            src="../../assets/images/disp-2@2x.png"
-            alt="product display"
-          />
-          <img
-            class="content content__disp--3 js-disp-3"
-            src="../../assets/images/disp-3@2x.png"
-            alt="product display"
-          />
-          <img
-            class="content content__brand-serif--white"
-            src="../../assets/images/svg/brand_serif_white.svg"
-            alt="product display"
-          />
-          <div class="content content__cure">
-            <h1 class="cure__slogan js-t-title">奇癒之手<br />梅爾瓦特</h1>
-            <p class="cure__sub js-t-disp">
-              高級大馬士玫瑰花蒸餾水<br />台灣獨家櫻花萃取技術
-            </p>
-            <a href="" class="btn--wt cure__see-more">相關產品</a>
-          </div>
-        </div>
-        <div class="content__ingredient">
-          <img
-            class="content content__ingredient-label"
-            src="../../assets/images/svg/ingerdient.svg"
-            alt="ingredient-label"
-          />
-          <ul class="content content__ingredient-list js-ingred-list">
-            <li class="ingerdient__item ingerdient__item--1">
-              <span class="js-ingred-1">有機大馬士革玫瑰花水</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="153.709"
-                height="153.709"
-                viewBox="0 0 153.709 153.709"
-              >
-                <g>
-                  <path
-                    d="M1386.607 7226.136a34.855 34.855 0 11-34.855 34.855 34.855 34.855 0 0134.855-34.855z"
-                    fill="#9c9c9c"
-                    opacity=".4"
-                  />
-                  <circle
-                    cx="76.855"
-                    cy="76.855"
-                    r="34.855"
-                    fill="#9c9c9c"
-                    opacity=".4"
-                  />
-                  <circle cx="76.855" cy="76.855" r="8.911" fill="#556066" />
-                  <circle
-                    class="js-circle-layer"
-                    cx="76.855"
-                    cy="76.855"
-                    r="76.855"
-                    fill="#9c9c9c"
-                    opacity=".146"
-                  ></circle>
-                </g>
-              </svg>
-            </li>
-            <li class="ingerdient__item ingerdient__item--2">
-              <span class="js-ingred-2">有機白玫瑰花水</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="153.709"
-                height="153.709"
-                viewBox="0 0 153.709 153.709"
-              >
-                <g>
-                  <path
-                    d="M1386.607 7226.136a34.855 34.855 0 11-34.855 34.855 34.855 34.855 0 0134.855-34.855z"
-                    fill="#9c9c9c"
-                    opacity=".4"
-                  />
-                  <circle
-                    cx="76.855"
-                    cy="76.855"
-                    r="34.855"
-                    fill="#9c9c9c"
-                    opacity=".4"
-                  />
-                  <circle cx="76.855" cy="76.855" r="8.911" fill="#556066" />
-                  <circle
-                    class="js-circle-layer"
-                    cx="76.855"
-                    cy="76.855"
-                    r="76.855"
-                    fill="#9c9c9c"
-                    opacity=".146"
-                  />
-                </g>
-              </svg>
-            </li>
-            <li class="ingerdient__item ingerdient__item--3">
-              <span class="js-ingred-3">洋甘菊花水</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="153.709"
-                height="153.709"
-                viewBox="0 0 153.709 153.709"
-              >
-                <g>
-                  <path
-                    d="M1386.607 7226.136a34.855 34.855 0 11-34.855 34.855 34.855 34.855 0 0134.855-34.855z"
-                    fill="#9c9c9c"
-                    opacity=".4"
-                  />
-                  <circle
-                    cx="76.855"
-                    cy="76.855"
-                    r="34.855"
-                    fill="#9c9c9c"
-                    opacity=".4"
-                  />
-                  <circle cx="76.855" cy="76.855" r="8.911" fill="#556066" />
-                  <circle
-                    class="js-circle-layer"
-                    cx="76.855"
-                    cy="76.855"
-                    r="76.855"
-                    fill="#9c9c9c"
-                    opacity=".146"
-                  />
-                </g>
-              </svg>
-            </li>
-          </ul>
-          <div class="content content__ingredient-describe describe">
-            <h4>保濕、修補功能</h4>
-            <p>
-              由高級的生物纖維面膜與獨家萃取天然台灣櫻花精華，珍貴品種大馬革士玫瑰等配方搭配而成，為肌膚迅速提亮，保濕緊實肌膚，收縮毛孔與鎮定敏感肌膚，短時間內達抗皺，恢復彈性，保濕且全天效果。
-            </p>
-          </div>
-          <a href="" class="content content__ingredient-buy btn--wt"
-            >立即選購</a
-          >
-          <div class="content content__ingredient-warn">
-            <span>＊示意圖，非產品真實樣貌</span>
-          </div>
-        </div>
-        <div class="content__shop">
-          <img
-            class="content content__shop-title"
-            src="../../assets/images/svg/shop_list.svg"
-            alt="shop list"
-          />
-          <img
-            class="content content__shop-bar"
-            src="../../assets/images/svg/shop_bar.svg"
-            alt="shop decorate bar"
-          />
-          <div class="content content__shop-list-wrapper">
-            <ul class="content__shop-list shop-list">
-              <li class="shop-list__item">
-                <a href="">
-                  <img
-                    class="shop-list__item-img"
-                    src="../../assets/images/prod-4.png"
-                    alt=""
-                  />
-                  <span href="" class="shop-list__item-link"
-                    >調理和面膜系列<img
-                      class="shop-list__item-arrow"
-                      src="../../assets/images/svg/shop_list_arrow.svg"
-                      alt=""
-                  /></span>
-                </a>
-              </li>
-              <li class="shop-list__item">
-                <a href="">
-                  <img
-                    class="shop-list__item-img"
-                    src="../../assets/images/prod-5.png"
-                    alt=""
-                  />
-                  <span href="" class="shop-list__item-link"
-                    >清潔系列<img
-                      class="shop-list__item-arrow"
-                      src="../../assets/images/svg/shop_list_arrow.svg"
-                      alt=""
-                  /></span>
-                </a>
-              </li>
-              <li class="shop-list__item">
-                <a href="">
-                  <img
-                    class="shop-list__item-img"
-                    src="../../assets/images/prod-6.png"
-                    alt=""
-                  />
-                  <span href="" class="shop-list__item-link"
-                    >禮盒和套裝組<img
-                      class="shop-list__item-arrow"
-                      src="../../assets/images/svg/shop_list_arrow.svg"
-                      alt=""
-                  /></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="content__process">
-          <img
-            class="content content__process-label"
-            src="../../assets/images/svg/process.svg"
-            alt="process-label"
-          />
-          <div class="content content__process-describe describe">
-            <h4>物料產地有機堅持</h4>
-            <p>
-              和有機溫室合作，環保萃取精華 製作過程中，層層把關。
-            </p>
-          </div>
-          <a href="" class="content content__process-env btn--wt"
-            >環保的保養品</a
-          >
-          <div class="content content__process-title brand-title">
-            <img
-              class="title__logo"
-              src="../../assets/images/svg/logo.svg"
-              alt=""
-            />
-            <h2 class="title__sub">護膚與時尚｜缺一不可</h2>
-            <h3 class="title__third">妳專屬的修復保養的專家</h3>
-          </div>
-          <div class="content content__process-media">
-            <a href=""
-              ><img
-                class="media__fb"
-                src="../../assets/images/svg/media_fb.svg"
-                alt="facebook"
-            /></a>
-            <a href="">
-              <img
-                class="media__ig"
-                src="../../assets/images/svg/media_ig.svg"
-                alt="instagram"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="content__footer">
-          <div class="content content__footer-priciples">
-            <h4 class="principles__title">Mervét 三大原則</h4>
-            <div class="principles__describe-wrapper">
-              <ul class="principles__describe-list">
-                <li>• 產品與大自然完全融合</li>
-                <li>• 堅持親自嚴選與測試產品成分</li>
-                <li>• 獨特創新的產品結合富有設計感的包裝</li>
-              </ul>
-              <p class="principles__describe">
-                結合 3
-                大原則，將身在都市生活的你重新帶入大自然，喚醒你最原始的肌膚，讓你擁有如【天使】般的肌膚。
-              </p>
-            </div>
-          </div>
-          <div class="content content__footer-links">
-            <a href="" class="footer__link">聯繫客服</a>
-            <a href="" class="footer__link">購物須知</a>
-            <a href="" class="footer__link">售後服務</a>
-          </div>
-          <p class="content content__footer-allrights">
-            © Mervét. All rights reserved.
+      <div class="content__ingredient">
+        <img class="content content__ingredient-label" src="../../assets/images/svg/ingerdient.svg"
+          alt="ingredient-label" />
+        <ul class="content content__ingredient-list js-ingred-list">
+          <li class="ingerdient__item ingerdient__item--1">
+            <span class="js-ingred-1">有機大馬士革玫瑰花水</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="153.709" height="153.709" viewBox="0 0 153.709 153.709">
+              <g>
+                <path d="M1386.607 7226.136a34.855 34.855 0 11-34.855 34.855 34.855 34.855 0 0134.855-34.855z"
+                  fill="#9c9c9c" opacity=".4" />
+                <circle cx="76.855" cy="76.855" r="34.855" fill="#9c9c9c" opacity=".4" />
+                <circle cx="76.855" cy="76.855" r="8.911" fill="#556066" />
+                <circle class="js-circle-layer" cx="76.855" cy="76.855" r="76.855" fill="#9c9c9c" opacity=".146">
+                </circle>
+              </g>
+            </svg>
+          </li>
+          <li class="ingerdient__item ingerdient__item--2">
+            <span class="js-ingred-2">有機白玫瑰花水</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="153.709" height="153.709" viewBox="0 0 153.709 153.709">
+              <g>
+                <path d="M1386.607 7226.136a34.855 34.855 0 11-34.855 34.855 34.855 34.855 0 0134.855-34.855z"
+                  fill="#9c9c9c" opacity=".4" />
+                <circle cx="76.855" cy="76.855" r="34.855" fill="#9c9c9c" opacity=".4" />
+                <circle cx="76.855" cy="76.855" r="8.911" fill="#556066" />
+                <circle class="js-circle-layer" cx="76.855" cy="76.855" r="76.855" fill="#9c9c9c" opacity=".146" />
+              </g>
+            </svg>
+          </li>
+          <li class="ingerdient__item ingerdient__item--3">
+            <span class="js-ingred-3">洋甘菊花水</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="153.709" height="153.709" viewBox="0 0 153.709 153.709">
+              <g>
+                <path d="M1386.607 7226.136a34.855 34.855 0 11-34.855 34.855 34.855 34.855 0 0134.855-34.855z"
+                  fill="#9c9c9c" opacity=".4" />
+                <circle cx="76.855" cy="76.855" r="34.855" fill="#9c9c9c" opacity=".4" />
+                <circle cx="76.855" cy="76.855" r="8.911" fill="#556066" />
+                <circle class="js-circle-layer" cx="76.855" cy="76.855" r="76.855" fill="#9c9c9c" opacity=".146" />
+              </g>
+            </svg>
+          </li>
+        </ul>
+        <div class="content content__ingredient-describe describe">
+          <h4>保濕、修補功能</h4>
+          <p>
+            由高級的生物纖維面膜與獨家萃取天然台灣櫻花精華，珍貴品種大馬革士玫瑰等配方搭配而成，為肌膚迅速提亮，保濕緊實肌膚，收縮毛孔與鎮定敏感肌膚，短時間內達抗皺，恢復彈性，保濕且全天效果。
           </p>
         </div>
-      </div>
-    </div>
-    <div class="menu">
-      <div class="menu__control">
-        <div class="menu__toggle-lang"></div>
-        <div class="menu__toggle-nav js-toggle-nav">
-          <span class="toogle-nav__bar js-toggle-nav-bar"></span>
-          <span class="toogle-nav__bar js-toggle-nav-bar"></span>
-          <span class="toogle-nav__bar js-toggle-nav-bar"></span>
+        <a href="" class="content content__ingredient-buy btn--wt">立即選購</a>
+        <div class="content content__ingredient-warn">
+          <span>＊示意圖，非產品真實樣貌</span>
         </div>
       </div>
-      <nav class="menu__navigation js-menu">
-        <img
-          class="navigation__logo"
-          src="../../assets/images/svg/logo.svg"
-          alt=""
-        />
-        <img
-          class="navigation__shop-list-label"
-          src="../../assets/images/svg/menu_shop_list.svg"
-          alt=""
-        />
-        <div class="navigation__shop-list-wrapper">
-          <ul class="navigation__shop-list shop-list">
+      <div class="content__shop">
+        <img class="content content__shop-title" src="../../assets/images/svg/shop_list.svg" alt="shop list" />
+        <img class="content content__shop-bar" src="../../assets/images/svg/shop_bar.svg" alt="shop decorate bar" />
+        <div class="content content__shop-list-wrapper">
+          <ul class="content__shop-list shop-list">
             <li class="shop-list__item">
               <a href="">
-                <img
-                  class="shop-list__item-img"
-                  src="../../assets/images/prod-4.png"
-                  alt=""
-                />
-                <span href="" class="shop-list__item-link"
-                  >調理和面膜系列<img
-                    class="shop-list__item-arrow"
-                    src="../../assets/images/svg/menu_shop_list_arrow.svg"
-                    alt=""
-                /></span>
+                <img class="shop-list__item-img" src="../../assets/images/prod-4.png" alt="" />
+                <span href="" class="shop-list__item-link">調理和面膜系列<img class="shop-list__item-arrow"
+                    src="../../assets/images/svg/shop_list_arrow.svg" alt="" /></span>
               </a>
             </li>
             <li class="shop-list__item">
               <a href="">
-                <img
-                  class="shop-list__item-img"
-                  src="../../assets/images/prod-5.png"
-                  alt=""
-                />
-                <span href="" class="shop-list__item-link"
-                  >清潔系列<img
-                    class="shop-list__item-arrow"
-                    src="../../assets/images/svg/menu_shop_list_arrow.svg"
-                    alt=""
-                /></span>
+                <img class="shop-list__item-img" src="../../assets/images/prod-5.png" alt="" />
+                <span href="" class="shop-list__item-link">清潔系列<img class="shop-list__item-arrow"
+                    src="../../assets/images/svg/shop_list_arrow.svg" alt="" /></span>
               </a>
             </li>
             <li class="shop-list__item">
               <a href="">
-                <img
-                  class="shop-list__item-img"
-                  src="../../assets/images/prod-6.png"
-                  alt=""
-                />
-                <span href="" class="shop-list__item-link"
-                  >禮盒和套裝組<img
-                    class="shop-list__item-arrow"
-                    src="../../assets/images/svg/menu_shop_list_arrow.svg"
-                    alt=""
-                /></span>
+                <img class="shop-list__item-img" src="../../assets/images/prod-6.png" alt="" />
+                <span href="" class="shop-list__item-link">禮盒和套裝組<img class="shop-list__item-arrow"
+                    src="../../assets/images/svg/shop_list_arrow.svg" alt="" /></span>
               </a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+      <div class="content__process">
+        <img class="content content__process-label" src="../../assets/images/svg/process.svg" alt="process-label" />
+        <div class="content content__process-describe describe">
+          <h4>物料產地有機堅持</h4>
+          <p>
+            和有機溫室合作，環保萃取精華 製作過程中，層層把關。
+          </p>
+        </div>
+        <a href="" class="content content__process-env btn--wt">環保的保養品</a>
+        <div class="content content__process-title brand-title">
+          <img class="title__logo" src="../../assets/images/svg/logo.svg" alt="" />
+          <h2 class="title__sub">護膚與時尚｜缺一不可</h2>
+          <h3 class="title__third">妳專屬的修復保養的專家</h3>
+        </div>
+        <div class="content content__process-media">
+          <a href=""><img class="media__fb" src="../../assets/images/svg/media_fb.svg" alt="facebook" /></a>
+          <a href="">
+            <img class="media__ig" src="../../assets/images/svg/media_ig.svg" alt="instagram" />
+          </a>
+        </div>
+      </div>
+      <div class="content__footer">
+        <div class="content content__footer-priciples">
+          <h4 class="principles__title">Mervét 三大原則</h4>
+          <div class="principles__describe-wrapper">
+            <ul class="principles__describe-list">
+              <li>• 產品與大自然完全融合</li>
+              <li>• 堅持親自嚴選與測試產品成分</li>
+              <li>• 獨特創新的產品結合富有設計感的包裝</li>
+            </ul>
+            <p class="principles__describe">
+              結合 3
+              大原則，將身在都市生活的你重新帶入大自然，喚醒你最原始的肌膚，讓你擁有如【天使】般的肌膚。
+            </p>
+          </div>
+        </div>
+        <div class="content content__footer-links">
+          <a href="" class="footer__link">聯繫客服</a>
+          <a href="" class="footer__link">購物須知</a>
+          <a href="" class="footer__link">售後服務</a>
+        </div>
+        <p class="content content__footer-allrights">
+          © Mervét. All rights reserved.
+        </p>
+      </div>
     </div>
+  </div>
+  <div class="menu">
+    <div class="menu__control">
+      <div class="menu__toggle-lang"></div>
+      <div class="menu__toggle-nav js-toggle-nav">
+        <span class="toogle-nav__bar js-toggle-nav-bar"></span>
+        <span class="toogle-nav__bar js-toggle-nav-bar"></span>
+        <span class="toogle-nav__bar js-toggle-nav-bar"></span>
+      </div>
+    </div>
+    <nav class="menu__navigation js-menu">
+      <img class="navigation__logo" src="../../assets/images/svg/logo.svg" alt="" />
+      <img class="navigation__shop-list-label" src="../../assets/images/svg/menu_shop_list.svg" alt="" />
+      <div class="navigation__shop-list-wrapper">
+        <ul class="navigation__shop-list shop-list">
+          <li class="shop-list__item">
+            <a href="">
+              <img class="shop-list__item-img" src="../../assets/images/prod-4.png" alt="" />
+              <span href="" class="shop-list__item-link">調理和面膜系列<img class="shop-list__item-arrow"
+                  src="../../assets/images/svg/menu_shop_list_arrow.svg" alt="" /></span>
+            </a>
+          </li>
+          <li class="shop-list__item">
+            <a href="">
+              <img class="shop-list__item-img" src="../../assets/images/prod-5.png" alt="" />
+              <span href="" class="shop-list__item-link">清潔系列<img class="shop-list__item-arrow"
+                  src="../../assets/images/svg/menu_shop_list_arrow.svg" alt="" /></span>
+            </a>
+          </li>
+          <li class="shop-list__item">
+            <a href="">
+              <img class="shop-list__item-img" src="../../assets/images/prod-6.png" alt="" />
+              <span href="" class="shop-list__item-link">禮盒和套裝組<img class="shop-list__item-arrow"
+                  src="../../assets/images/svg/menu_shop_list_arrow.svg" alt="" /></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -544,5 +306,6 @@
 
         gtag('config', 'UA-101423651-2');
     </script> -->
-  </body>
+</body>
+
 </html>

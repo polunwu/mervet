@@ -2,7 +2,33 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
+// LOADING
+let progress = 0
+let images = document.querySelectorAll('img')
+let image_count = images.length
+let percent_per_image = 100 / image_count
+let percent_text = document.querySelector('#loading_text')
+let loading = document.querySelector('#loading')
+
+images.forEach(img => {
+  img.addEventListener('load', () => {
+    progress += percent_per_image
+    let percent = Math.round(progress)
+    console.log(percent)
+    percent_text.innerHTML = percent
+  })
+})
+
 window.addEventListener('load', () => {
+  percent_text.innerHTML = 100
+  setTimeout(() => {
+    loading.style.opacity = '0'
+  }, 1000);
+  setTimeout(() => {
+    loading.style.display = 'none'
+  }, 1500);
+  // loading end
+
   //取得裝置寬
   window.currentWidth = getViewWidth()
   //變換裝置寬度時重整頁面

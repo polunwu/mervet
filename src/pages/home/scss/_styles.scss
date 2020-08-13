@@ -45,6 +45,61 @@ ul {
 }
 // END OF GENERAL
 
+// LOADING
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #EFF2F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 288px;
+    img {
+      width: 117px;
+      height: 136px;
+    }
+  }
+  &__percent {
+    display: flex;
+    align-items: center;
+    color: $main-color;
+    font-weight: $regular;
+    font-size: 30px;
+    span {
+      margin-right: 13px;
+    }
+    img {
+      width: 13px;
+      height: 14px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    &__container {
+      width: 220px;
+    }
+    &__container img {
+      width: 85px;
+      height: 99px;
+    }
+    &__percent {
+      font-size: 22px;
+    }
+    &__percent img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
 // FIXBG
 .fixbg {
   position: fixed;
