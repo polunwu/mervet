@@ -367,8 +367,6 @@ ul {
       display: flex;
       flex-direction: row;
 
-      .content__card:first-child {
-      }
       .content__card {
         width: 311px;
         height: 417px;
@@ -628,6 +626,8 @@ ul {
     }
     .content__shop-list-wrapper::-webkit-scrollbar {
       display: none;
+      width: 0px;
+      height: 0px;
     }
     // END OF SHOP LIST
     // PROCESS
@@ -1951,6 +1951,8 @@ ul {
     }
     .navigation__shop-list-wrapper::-webkit-scrollbar {
       display: none;
+      width: 0px;
+      height: 0px;
     }
     .navigation__shop-list {
       .shop-list__item {
