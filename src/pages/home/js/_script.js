@@ -104,7 +104,7 @@ function registerProductImgTl() {
       // top of trigger el hits 70% of viewport
       start: 'top 70%',
       end: 'top+=800% 70%', 
-      scrub: 1,
+      scrub: true,
       // markers: true,
     },
     defaults: {

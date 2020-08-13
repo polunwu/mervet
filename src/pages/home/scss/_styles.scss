@@ -622,7 +622,12 @@ ul {
       top: 7643px;
       width: 100%;
       overflow: scroll;
-      -webkit-overflow-scrolling: scroll;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .content__shop-list-wrapper::-webkit-scrollbar {
+      display: none;
     }
     // END OF SHOP LIST
     // PROCESS
@@ -1940,6 +1945,12 @@ ul {
     .navigation__shop-list-wrapper {
       width: 100vw;
       overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .navigation__shop-list-wrapper::-webkit-scrollbar {
+      display: none;
     }
     .navigation__shop-list {
       .shop-list__item {
