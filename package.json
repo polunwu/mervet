@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --config webpack.dev.js --mode development",
+    "serve": "webpack-dev-server --disableHostCheck=true --config webpack.dev.js --mode development",
     "build": "webpack --config webpack.prod.js --mode production",
     "preview": "npm run build && http-server dist",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"

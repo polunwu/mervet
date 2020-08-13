@@ -355,7 +355,7 @@ ul {
       }
     }
     .content__title {
-      top: 343px;
+      top: 279px;
       .title__scroll {
         width: 51px;
         height: 99.5px;
@@ -363,16 +363,20 @@ ul {
     }
     .content__card-list {
       top: 904px;
-      left: 60.3vw;
+      left: 40.3vw;
       display: flex;
       flex-direction: row;
 
+      .content__card:first-child {
+      }
       .content__card {
         width: 311px;
         height: 417px;
         border-radius: 45px;
         box-shadow: 0px 7px 20px #acb9ba;
-        margin-right: 41px;
+        margin-right: 21px;
+        margin-left: 21px;
+        margin-bottom: 50px;
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -618,6 +622,7 @@ ul {
       top: 7643px;
       width: 100%;
       overflow: scroll;
+      -webkit-overflow-scrolling: scroll;
     }
     // END OF SHOP LIST
     // PROCESS
@@ -842,7 +847,7 @@ ul {
         }
       }
       .content__title {
-        top: 23.82vw;
+        top: 19.38vw;
 
         .title__scroll {
           width: 3.54vw;
@@ -865,7 +870,7 @@ ul {
       }
       .content__card-list {
         top: 62.78vw;
-        left: 60.3vw;
+        left: 40.3vw;
 
         .content__card {
           width: 21.6vw;
@@ -1128,7 +1133,7 @@ ul {
         right: 89px;
       }
       .content__card-list {
-        left: 59vw;
+        left: 40.3vw;
       }
       // END OF HEAD
       // PRODUCT
@@ -1928,7 +1933,7 @@ ul {
       margin-bottom: 26.75px;
     }
     .navigation__shop-list-label {
-      width: 94px;
+      width: 200px;
       height: 15px;
       margin-bottom: 72.36px;
     }

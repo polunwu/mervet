@@ -111,20 +111,17 @@ function registerProductImgTl() {
       ease: 'Power1.easeInOut',
     }
   })
-  .from('.js-disp-1', {
-    autoAlpha: 0.2,
+  .to('.js-disp-1', {
     x: '-15vw',
     y: -50,
     rotate: '20deg'
   }, '0.1')
-  .from('.js-disp-2', {
-    autoAlpha: 0.2,
+  .to('.js-disp-2', {
     x: '-5vw',
     y: 10,
     rotate: '7deg'
   }, '0.1')
-  .from('.js-disp-3', {
-    autoAlpha: 0.2,
+  .to('.js-disp-3', {
     y: -20,
     rotate: '8deg'
   }, '0')
@@ -222,17 +219,17 @@ function registerFixBgFashionTl() {
     scale: 1.04,
   })
   .from('.js-fashion-obj-1', {
-    y: 100,
+    y: 600,
     x: -10,
     rotate: '10deg',
   }, '0') 
   .from('.js-fashion-obj-2', {
-    y: 150,
+    y: 650,
     x: -50,
     rotate: '14deg',
   }, '0') 
   .from('.js-fashion-obj-3', {
-    y: 180,
+    y: 680,
     x: -175,
     rotate: '25deg',
   }, '0') 
