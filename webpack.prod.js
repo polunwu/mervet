@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CnameWebpackPlugin = require('cname-webpack-plugin'); // create CNAME file
 
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -172,6 +173,9 @@ module.exports = {
                 discardUnused: false
             },
             canPrint: true
-        })
+        }),
+         new CnameWebpackPlugin({
+            domain: 'mervetskin.com',
+            }),
     ]
 };
