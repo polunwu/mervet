@@ -528,7 +528,7 @@ ul {
 
       .cure__slogan,
       .cure__sub,
-      .cure__see-more {
+      .cure__learn-more {
         font-family: $main-font;
         color: $main-color;
         text-align: center;
@@ -1957,6 +1957,60 @@ ul {
     top: 19px;
     right: 21px;
 
+    .menu__toggle-lang {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      width: 111px;
+      height: 40px;
+      box-shadow: 0px 2px 3px #838D8D66;
+      border-radius: 19px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .toggle-lang__layer {
+        position: absolute;
+        z-index: 0;
+        width: 51.387px;
+        height: 32.92px;
+        top: 4px;
+        left: 5px;
+        transition: transform 0.35s;
+        transform-origin: 100% 50%;
+      }
+      .toggle-lang__zh, .toggle-lang__en {
+        height: 33px;
+        width: 51px;
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        font-size: 15px;
+        font-weight: $regular;
+        transition: color 0.35s;
+      }
+      .toggle-lang__zh {
+        color: #fff;
+      }
+      .toggle-lang__en {
+        color: $main-color;
+      }
+    }
+    .menu__toggle-lang.en {
+      .toggle-lang__layer {
+        transform: scaleX(-1);
+      }
+      .toggle-lang__zh {
+        color: $main-color;
+      }
+      .toggle-lang__en {
+        color: #fff;
+      }
+    }
+
     .menu__toggle-nav {
       box-sizing: border-box;
       width: 40px;
@@ -2059,6 +2113,23 @@ ul {
         .toogle-nav__bar {
           width: 1.25vw;
           height: 0.208vw;
+        }
+      }
+      .menu__toggle-lang {
+        right: 4.16vw;
+        width: 7.7vw;
+        height: 2.78vw;
+        border-radius: 1.32vw;
+        .toggle-lang__layer {
+          top: 0.27vw;
+          left: 0.35vw;
+          width: 3.57vw;
+          height: 2.28vw;
+        }
+        .toggle-lang__zh, .toggle-lang__en {
+          height: 2.29vw;
+          width: 3.54vw;
+          font-size: 1vw;
         }
       }
     }

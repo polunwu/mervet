@@ -13,6 +13,7 @@ module.exports = {
     resolve: {
         alias: {
             '@img': path.resolve(__dirname, 'src/assets/images'),
+            '@assets': path.resolve(__dirname, 'src/assets'),
         },
     },
     devtool: 'source-map',

@@ -1,7 +1,16 @@
 import { gsap } from "gsap"
 import { SlowMo } from "gsap/EasePack";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { getTranslations } from "./_translations.js"
 gsap.registerPlugin(ScrollTrigger, SlowMo)
+
+// TRANSLATION
+window.locale = "zh"
+window.translations = getTranslations()
+window.i18n = function(string) {
+  return window.translations[`${window.locale}`][`${string}`];
+}
+console.log(window.translations)
 
 // LOADING
 let progress = 0
@@ -39,6 +48,35 @@ window.addEventListener('load', () => {
       location.reload()
     }
   })
+
+  // TOGGLE LANG
+  const langSet = document.querySelector('.js-lang-set')
+  const toZh = document.querySelector('.js-zh')
+  const toEn = document.querySelector('.js-en')
+  
+  toZh.addEventListener('click', () => {
+    if(langSet.classList.contains('en')) {
+      langSet.classList.remove('en')
+      document.body.classList.remove('en')
+      window.locale = "zh"
+      // translate all text feilds to zh
+      document.querySelectorAll('[data-field]').forEach(el => {
+        el.innerHTML = i18n(el.dataset.field.toLowerCase());
+      });
+    }
+  })
+  toEn.addEventListener('click', () => {
+    if(!langSet.classList.contains('en')) {
+      langSet.classList.add('en')
+      document.body.classList.add('en')
+      window.locale = "en"
+      // translate all text feilds to en
+      document.querySelectorAll('[data-field]').forEach(el => {
+        el.innerHTML = i18n(el.dataset.field.toLowerCase());
+      });
+    }
+  })
+  // END OF TOGGLE LANG
   
   // TOGGLE MENU
   window.menuIsOpen = false
@@ -204,7 +242,7 @@ function registerHeadCardTl() {
       end: '+=160% 25%',
       pin: true,
       scrub: 0.8,
-      markers: true,
+      // markers: true,
     }
   })
   .to('.js-t-head-card', {
