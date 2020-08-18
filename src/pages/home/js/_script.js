@@ -35,13 +35,12 @@ window.addEventListener('load', () => {
   }, 1000);
   setTimeout(() => {
     loading.style.display = 'none'
+    // LAZY LOAD IMG
+    document.querySelectorAll('[data-src]').forEach(el => {
+      el.setAttribute('src', el.dataset.src)
+    })
   }, 1500);
   // loading end
-
-  // LAZY LOAD IMG
-  document.querySelectorAll('[data-src]').forEach(el => {
-    el.setAttribute('src', el.dataset.src)
-  })
 
   //取得裝置寬
   window.currentWidth = getViewWidth()
