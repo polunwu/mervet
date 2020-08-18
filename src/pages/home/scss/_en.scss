@@ -81,6 +81,7 @@ body.en {
       .content__footer-priciples {
         .principles__title span {
           letter-spacing: 0px;
+          font-weight: $regular;
         }
       }
       .content__footer-links {
@@ -91,19 +92,119 @@ body.en {
     }
     // 1440px 以上等比例放大
     @media screen and (min-width: 1441px) {
-
+      &__content {
+      // HEAD
+        .brand-title {
+          .title__sub {
+            font-size: 1.39vw;
+            line-height: 1.875vw;
+          }
+          .title__third {
+            font-size: 1.39vw;
+          }
+        }
+        .content__slogan {
+          letter-spacing: 0.5vw;
+        }
+        // PRODUCT
+        .content__cure {
+          top: 252vw;
+          .cure__slogan {
+            letter-spacing: 0.5vw;
+            line-height: 6.25vw;
+            margin-bottom: 3.68vw;
+          }
+          .cure__sub {
+            font-size: 1.39vw;
+            line-height: 1.875vw;
+            margin-bottom: 5.49vw;
+          }
+        }
+        // INGREDIENT
+        .describe {
+          h4 {
+            line-height: 2.43vw;
+            margin-bottom: 3.35vw;
+          }
+          p {
+            font-size: 1.04vw;
+            letter-spacing: 0px;
+            line-height: 2.08vw;
+          }
+        }
+        // PROCESS
+        .content__process-describe {
+          h4 {
+            margin-bottom: 2.84vw;
+          }
+        }
+      }
     }
     // 設計稿：1024px 以上
     @media screen and (max-width: 1280px) {
-
+      // none
     }
     // 設計稿：768px 以上
     @media screen and (max-width: 1023px) {
-
+      // none
     }
     // 設計稿：手機版
     @media screen and (max-width: 767px) {
-
+      &__content {
+      // HEAD
+        .brand-title {
+          .title__sub {
+            font-size: 15px;
+            line-height: 17px;
+            width: 262px;
+          }
+          .title__third {
+            font-size: 13px;
+            margin-bottom: 68px;
+            width: 200px;
+            line-height: 17px;
+          }
+        }
+        .content__slogan {
+          letter-spacing: 4px;
+          font-size: 50px;
+        }
+        // PRODUCT
+        .content__cure {
+          top: 2470px;
+          .cure__slogan {
+            letter-spacing: 4px;
+            line-height: 60px;
+            margin-bottom: 47px;
+          }
+          .cure__sub {
+            font-size: 13px;
+            letter-spacing: 1px;
+            line-height: 20px;
+            margin-bottom: 53px;
+            width: 250px;
+          }
+        }
+        // INGREDIENT
+        .content__ingredient-describe {
+          top: 4186px;
+           h4 {
+            line-height: 30px;
+            margin-bottom: 35px;
+           }
+        }
+        .content__ingredient-warn {
+          letter-spacing: 0px;
+        }
+        // PROCESS
+        .content__process-describe {
+          top: 5980px;
+          h4 {
+            line-height: 30px;
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
   }
   .shop-list {
@@ -114,19 +215,23 @@ body.en {
     }
     // 1440px 以上等比例放大
     @media screen and (min-width: 1441px) {
-
+      &__item-link {
+        font-size: 1.74vw;
+      }
     }
     // 設計稿：1024px 以上
     @media screen and (max-width: 1280px) {
-
+      // none
     }
     // 設計稿：768px 以上
     @media screen and (max-width: 1023px) {
-
+      // none
     }
     // 設計稿：手機版
     @media screen and (max-width: 767px) {
-      
+      &__item-link {
+        font-size: 15px;
+      }
     }
   }
 }
