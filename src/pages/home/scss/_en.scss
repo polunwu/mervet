@@ -187,10 +187,13 @@ body.en {
         }
         // INGREDIENT
         .content__ingredient-describe {
-          top: 4186px;
+          top: 4246px;
            h4 {
-            line-height: 30px;
+            line-height: 22px;
             margin-bottom: 35px;
+           }
+           p {
+            line-height: 28px;
            }
         }
         .content__ingredient-warn {
@@ -198,11 +201,14 @@ body.en {
         }
         // PROCESS
         .content__process-describe {
-          top: 5980px;
+          top: 6000px;
           h4 {
-            line-height: 30px;
+            line-height: 22px;
             margin-bottom: 20px;
           }
+          p {
+            line-height: 28px;
+           }
         }
       }
     }
