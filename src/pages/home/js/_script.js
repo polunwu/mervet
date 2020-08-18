@@ -1,6 +1,7 @@
 import { gsap } from "gsap"
+import { SlowMo } from "gsap/EasePack";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, SlowMo)
 
 // LOADING
 let progress = 0
@@ -127,14 +128,15 @@ function registerProductImgTl() {
   return gsap.timeline({
     scrollTrigger: {
       trigger: '.js-t-disp',
-      // top of trigger el hits 70% of viewport
-      start: 'top 70%',
-      end: 'top+=800% 70%', 
-      scrub: true,
+      // top of trigger el hits 50% of viewport
+      start: 'top 50%',
+      toggleActions: 'play none none none',
+      once: true,
       // markers: true,
     },
     defaults: {
-      ease: 'Power1.easeInOut',
+      ease: 'Power1.easeOut',
+      duration: 2.5,
     }
   })
   .to('.js-disp-1', {
@@ -199,15 +201,15 @@ function registerHeadCardTl() {
       trigger: '.js-t-head-card',
       // top of trigger hits 25% of viewport
       start: 'top 25%',
-      end: 'bottom+=170% bottom',
+      end: '+=160% 25%',
       pin: true,
       scrub: 0.8,
-      // markers: true,
+      markers: true,
     }
   })
   .to('.js-t-head-card', {
     x: -651,
-    ease: 'Power1.easeInOut',
+    ease: SlowMo.ease.config(0.5, 0.4, false),
   }) 
 }
 function registerFixBgMakerTl() {

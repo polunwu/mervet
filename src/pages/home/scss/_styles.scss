@@ -1835,6 +1835,25 @@ ul {
       height: 413px;
       box-shadow: 0px 7px 20px #802a1599;
       border-radius: 10px;
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      transition: background-size 0.6s ease-out;
+    }
+    .shop-list__item-img--1 {
+      background-image: url('~@img/prod-4.png');
+    }
+    .shop-list__item-img--2 {
+      background-image: url('~@img/prod-5.png');
+    }
+    .shop-list__item-img--3 {
+      background-image: url('~@img/prod-6.png');
+    }
+  }
+  &__item:hover {
+    .shop-list__item-img {
+      background-size: 105%;
     }
   }
   &__item-link {
