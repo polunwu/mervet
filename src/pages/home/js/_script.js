@@ -24,7 +24,6 @@ images.forEach(img => {
   img.addEventListener('load', () => {
     progress += percent_per_image
     let percent = Math.round(progress)
-    console.log(percent)
     percent_text.innerHTML = percent
   })
 })
@@ -41,7 +40,7 @@ window.addEventListener('load', () => {
 
   // LAZY LOAD IMG
   document.querySelectorAll('[data-src]').forEach(el => {
-    console.log(el, el.dataset.src)
+    el.setAttribute('src', el.dataset.src)
   })
 
   //取得裝置寬
