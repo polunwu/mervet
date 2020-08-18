@@ -25,7 +25,49 @@ module.exports = {
             {
                 test: /\.html$/,
                 use: [
-                { loader: 'html-loader' }
+                    { 
+                        loader: 'html-loader',
+                        options: {
+                            attributes: {
+                                list: [
+                                    {
+                                        // Tag name
+                                        tag: 'img',
+                                        // Attribute name
+                                        attribute: 'src',
+                                        // Type of processing, can be `src` or `scrset`
+                                        type: 'src',
+                                    },
+                                    {
+                                        // Tag name
+                                        tag: 'img',
+                                        // Attribute name
+                                        attribute: 'srcset',
+                                        // Type of processing, can be `src` or `scrset`
+                                        type: 'srcset',
+                                    },
+                                    { // 自訂解析 data-src
+                                        tag: 'img',
+                                        attribute: 'data-src',
+                                        type: 'src',
+                                    },
+                                    {
+                                        tag: 'img',
+                                        attribute: 'data-srcset',
+                                        type: 'srcset',
+                                    },
+                                    {
+                                        // Tag name
+                                        tag: 'link',
+                                        // Attribute name
+                                        attribute: 'href',
+                                        // Type of processing, can be `src` or `scrset`
+                                        type: 'src',
+                                    },
+                                ],
+                            }
+                        }
+                    }
                 ]
             },
             {

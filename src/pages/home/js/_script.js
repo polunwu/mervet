@@ -39,6 +39,11 @@ window.addEventListener('load', () => {
   }, 1500);
   // loading end
 
+  // LAZY LOAD IMG
+  document.querySelectorAll('[data-src]').forEach(el => {
+    console.log(el, el.dataset.src)
+  })
+
   //取得裝置寬
   window.currentWidth = getViewWidth()
   //變換裝置寬度時重整頁面
@@ -62,7 +67,7 @@ window.addEventListener('load', () => {
       // translate all text feilds to zh
       document.querySelectorAll('[data-field]').forEach(el => {
         el.innerHTML = i18n(el.dataset.field.toLowerCase());
-      });
+      })
     }
   })
   toEn.addEventListener('click', () => {
