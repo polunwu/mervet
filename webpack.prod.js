@@ -217,8 +217,8 @@ module.exports = {
             },
             canPrint: true
         }),
-        //  new CnameWebpackPlugin({
-        //     domain: 'mervetskin.com',
-        //     }),
+        new CnameWebpackPlugin({
+            domain: 'mervetskin.com',
+        }),
     ]
 };
