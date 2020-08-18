@@ -1,0 +1,132 @@
+// EN STYLE
+body.en {
+  .maincontent {
+    &__content {
+      // HEAD
+      .brand-title {
+        .title__sub {
+          font-size: 20px;
+          line-height: 27px;
+          letter-spacing: 0px;
+        }
+        .title__third {
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
+      }
+      .content__card-list {
+        .content__card {
+          .card__info {
+            .card__title {
+              letter-spacing: 0.9px;
+            }
+          }
+        }
+      }
+      .content__slogan {
+        font-family: 'Minion Pro';
+        font-weight: 400;
+        letter-spacing: 8px;
+      }
+      // PRODUCT
+      .content__cure {
+        top: 3630px;
+        .cure__slogan {
+          font-family: 'Minion Pro';
+          font-weight: 400;
+          letter-spacing: 8px;
+          line-height: 90px;
+          margin-bottom: 53px;
+        }
+        .cure__sub {
+          font-size: 20px;
+          letter-spacing: 1px;
+          line-height: 27px;
+          margin-bottom: 79px;
+        }
+      }
+      .btn--wt {
+        letter-spacing: 0.48px;
+      }
+      // INGREDIENT
+      .content__ingredient-list {
+        .ingerdient__item span {
+          letter-spacing: 1px;
+        }
+      }
+      .describe {
+        h4 {
+          font-family: 'Minion Pro';
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          line-height: 35px;
+          margin-bottom: 48.3px;
+        }
+        p {
+          font-size: 15px;
+          letter-spacing: 0px;
+          line-height: 30px;
+        }
+      }
+      .content__ingredient-warn {
+        letter-spacing: 0px;
+      }
+      // PROCESS
+      .content__process-describe {
+        h4 {
+          margin-bottom: 41px;
+        }
+      }
+      // FOOTER
+      .content__footer-priciples {
+        .principles__title span {
+          letter-spacing: 0px;
+        }
+      }
+      .content__footer-links {
+        .footer__link {
+          letter-spacing: 0px;
+        }
+      }
+    }
+    // 1440px 以上等比例放大
+    @media screen and (min-width: 1441px) {
+
+    }
+    // 設計稿：1024px 以上
+    @media screen and (max-width: 1280px) {
+
+    }
+    // 設計稿：768px 以上
+    @media screen and (max-width: 1023px) {
+
+    }
+    // 設計稿：手機版
+    @media screen and (max-width: 767px) {
+
+    }
+  }
+  .shop-list {
+    &__item-link {
+      font-family: 'Minion Pro';
+      letter-spacing: 1.25px;
+      font-size: 25px;
+    }
+    // 1440px 以上等比例放大
+    @media screen and (min-width: 1441px) {
+
+    }
+    // 設計稿：1024px 以上
+    @media screen and (max-width: 1280px) {
+
+    }
+    // 設計稿：768px 以上
+    @media screen and (max-width: 1023px) {
+
+    }
+    // 設計稿：手機版
+    @media screen and (max-width: 767px) {
+      
+    }
+  }
+}
