@@ -678,7 +678,8 @@ ul {
     .content__shop-list-wrapper {
       top: 7643px;
       width: 100%;
-      overflow: scroll;
+      height: auto;
+      overflow: auto;
       -webkit-overflow-scrolling: touch;
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
@@ -2076,7 +2077,8 @@ ul {
     }
     .navigation__shop-list-wrapper {
       width: 100vw;
-      overflow: scroll;
+      height: auto;
+      overflow: auto;
       -webkit-overflow-scrolling: touch;
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
