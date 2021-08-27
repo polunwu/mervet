@@ -23,13 +23,13 @@ Run the dev-server
 npm run serve
 ```
 
-Build
+Build to `/dist` folder
 
 ```sh
 npm run build
 ```
 
-Deploy to gh-pages
+Deploy `/dist` to gh-pages
 
 ```sh
 npm run deploy
