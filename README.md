@@ -1,26 +1,65 @@
+# Mervet 官網
+
+- node >= 12.16
+- npm >= 6.13
+- yarn >= 1.22
+
+Clone the repository
+
+```sh
+ git clone https://github.com/polishdesigndev/mervet
+ cd mervet
+```
+
+Install npm dependencies
+
+```sh
+ npm install
+```
+
+Run the dev-server
+
+```sh
+npm run serve
+```
+
+Build
+
+```sh
+npm run build
+```
+
+Deploy to gh-pages
+
+```sh
+npm run deploy
+```
+
+---
+
 # webpack-starter-rackup
 
 A simple **webpack 4 starter project** for your basic web development needs with rackup.
 
 ## Features
 
-* Separated development and production webpack settings you can understand
-* Sass
-* ES6
-* Asset loading
-* CSS Vendor prefixing
-* Development server
-* Sourcemaps
-* Favicons generation
-* Production optimizations
-* Mobile browser header color
-* Multi pages structure
-* With Rack server
+- Separated development and production webpack settings you can understand
+- Sass
+- ES6
+- Asset loading
+- CSS Vendor prefixing
+- Development server
+- Sourcemaps
+- Favicons generation
+- Production optimizations
+- Mobile browser header color
+- Multi pages structure
+- With Rack server
 
 ## Requirements
 
-* [Node](https://nodejs.org) > 7.6
-* [Ruby](https://www.ruby-lang.org/) 2.6.5
+- [Node](https://nodejs.org) > 7.6
+- [Ruby](https://www.ruby-lang.org/) 2.6.5
 
 ## Usage
 
@@ -36,10 +75,11 @@ Clone the repository
 Install npm dependencies
 
 ```sh
- npm install 
+ npm install
 ```
 
 Run the kickstart command
+
 ```sh
 npm run kickstart
 ```
@@ -59,6 +99,7 @@ npm run build
 ```
 
 To preview the production build
+
 ```sh
 npm run preview
 ```
@@ -66,6 +107,7 @@ npm run preview
 **After the project has been build**
 
 Install Gemfile
+
 ```sh
 bundle install
 ```
